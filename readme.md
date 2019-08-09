@@ -4,7 +4,7 @@ DMS.Korea Leaderboard
 
 | date| name | score(5CV) | comment | URL|
 |------------|--------|-------|----------------|--------------------------------------------------|
-| 2019-08-10 | 현종열 | 0.90  | seed=9412 적용 |https://www.kaggle.com/nroman/downsampling-terror |
+| 2019-08-10 | 현종열 | 0.944 | 샘플코드 |https://www.kaggle.com/andrew60909/lgb-starter-r |
 |            | 　     | 　    | 　             | |
 |            | 　     | 　    | 　             | |
 |            | 　     | 　    | 　             | |
