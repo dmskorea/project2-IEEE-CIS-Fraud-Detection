@@ -32,7 +32,7 @@ DMS.Korea Leaderboard
 8. kernel에 reduce_mem_usage 함수가 올라와 있습니다. 
 https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 
-9. TOP1VI변수 :  TransactionID, card1, TransactionAmt, addr1, card2, dist1
+9. TOP VI변수 :  TransactionID, card1, TransactionAmt, addr1, card2, dist1
 
 10. LGB + Best Bayes params : 
 {'bagging_fraction': 0.8999999999997461,
