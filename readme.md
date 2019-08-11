@@ -33,6 +33,7 @@ DMS.Korea Leaderboard
 https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 
 9. TOP VI변수 :  TransactionID, card1, TransactionAmt, addr1, card2, dist1
+(TransactionID에 대한 참고 의견 : https://www.kaggle.com/c/ieee-fraud-detection/discussion/103690#latest-596681)
 
 10. LGB + Best Bayes params : 
 {'bagging_fraction': 0.8999999999997461,
