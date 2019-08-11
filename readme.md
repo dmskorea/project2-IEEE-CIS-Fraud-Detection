@@ -11,10 +11,38 @@ DMS.Korea Leaderboard
 |            | 　     | 　    | 　    |
 
 
+<hr />
+2019-08-11 커널 주요내용
+<hr />
 
+1. train, test 데이터셋은 not overlap!. train은 과거 데이터 test는 미래 데이터로 data split에서 random 으로 하지말고 시간(TransactionDT)기준으로 진행
 
+2. train 데이터셋과 test 데이터셋은 샘플 사이즈는 동일.  (훈련시 샘플링 비추)
 
+3. 몇몇 변수는 이미 normalized 되어 있습니다. 변수 전부를 normalized 해서 사용x
 
+4. 몇몇 categorical 변수는 "found"라는 상태값 존재
+
+5. client device 변수, some of info could be for old devices and may be absent from test data.
+
+6. TransactionAmt를 log transform하면 skewed distribution이 조정 됨
+
+7. card1 ~ card6는 categorical feature (card1,2,3,5의 변수값은 numeric이여도 이변수들은 category 입니다.)
+
+8. kernel에 reduce_mem_usage 함수가 올라와 있습니다. 
+https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+
+9. TOP1VI변수 :  TransactionID, card1, TransactionAmt, addr1, card2, dist1
+
+10. LGB + Best Bayes params : 
+{'bagging_fraction': 0.8999999999997461,
+ 'feature_fraction': 0.8999999999999121,
+ 'max_depth': 50.0,
+ 'min_child_weight': 0.0029805017044362268,
+ 'min_data_in_leaf': 20.0,
+ 'num_leaves': 381.85354295079446,
+ 'reg_alpha': 1.0,
+ 'reg_lambda': 2.0}
 
 <hr />
 2019-08-08 공지사항
