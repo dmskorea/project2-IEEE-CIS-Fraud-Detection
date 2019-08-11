@@ -24,6 +24,7 @@ DMS.Korea Leaderboard
 4. 몇몇 categorical 변수는 "found"라는 상태값 존재
 
 5. client device 변수, some of info could be for old devices and may be absent from test data.
+(device에 대한 참고 의견 : https://www.kaggle.com/c/ieee-fraud-detection/discussion/103565#latest-596633)
 
 6. TransactionAmt를 log transform하면 skewed distribution이 조정 됨
 
