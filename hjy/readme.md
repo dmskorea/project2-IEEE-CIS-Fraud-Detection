@@ -63,3 +63,9 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/102940#latest-597149
 - 0650 features CV 0.9389 LB 0.9502
 - 1800 features CV 0.9400 LB 0.9492
 - TimeSeriesSplit is highly influenced by the training set size (I tested with 10 folds different baseline models (xgboost,lighgbm,catboost)and there seems to be a fairly linear relationship between validation AUC and train size. 
+
+***
+
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/100778#latest-589021
+
+- The Pemaildomain tells a lot about the isFraud. 95% transaction made by protonmail.com, isFraud=1 Also, 40% transaction made by protonmail.com in Remaildomain, isFraud=1
