@@ -19,6 +19,8 @@ X_train['hour'] = X_train['TransactionDT'].dt.hour
 X_train['day'] = X_train['TransactionDT'].dt.day
 ```
 
+<br >
+
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/100071#latest-589485
 
 - the TransactionDT column is measured in seconds, starting at December 1.
