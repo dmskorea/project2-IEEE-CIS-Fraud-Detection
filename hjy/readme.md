@@ -1,6 +1,6 @@
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/100333#latest-583866
 
-read dataset fast!
+faster read dataset!!!
 
 ```
 import datatable as dt
