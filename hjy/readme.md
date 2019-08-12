@@ -1,3 +1,23 @@
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/100333#latest-583866
+
+```
+import datatable as dt
+
+folder_path = '../input/'
+train_identity = dt.fread(f'{folder_path}train_identity.csv')
+test_identity = dt.fread(f'{folder_path}test_identity.csv')
+train_transaction = dt.fread(f'{folder_path}train_transaction.csv')
+test_transaction = dt.fread(f'{folder_path}test_transaction.csv')
+
+train_identity.key = 'TransactionID'
+test_identity.key = 'TransactionID'
+train = train_transaction[:, :, dt.join(train_identity)]
+test = test_transaction[:, :, dt.join(test_identity)]
+
+train.to_csv("train.csv")
+test.to_csv("test.csv")
+```
+
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/100400#latest-594758
 - the hour of the day vs the fraction of fraudulent transactions 
 - the high fraction of fraudulent transactions occur when there is a low number of transactions per hour
