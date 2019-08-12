@@ -43,3 +43,11 @@ centurylink / embarqmail / q -> Centurylink
 aim / aol -> AOL
 twc / charter -> Spectrum
 ```
+
+***
+
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/101040#latest-590616
+
+- In my first figure the first 20% of the test set are located to the left of the solid black vertical line. As you can see, this is before the observed change in missing values distribution. This could mean that our public LB score will not correlate well with the private LB. This may well be intentional by the competition hosts to see how well our models generalise.
+- What does this mean? It may mean the winning solution will have to deal with the missing values in a novel way, but as far as I know there is no way of validating any way of dealing with the missing data.
+- One conclusion from analysis - Null values increase with time in test set and decrease with time in train set.
