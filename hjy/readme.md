@@ -18,3 +18,8 @@ X_train['dow'] = X_train['TransactionDT'].dt.dayofweek
 X_train['hour'] = X_train['TransactionDT'].dt.hour
 X_train['day'] = X_train['TransactionDT'].dt.day
 ```
+
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/100071#latest-589485
+
+- the TransactionDT column is measured in seconds, starting at December 1.
+- There are peaks in the number of transactions at around 25 days and around 390 days (exactly 365 days later), which could be caused by increased sales around the christmas period. The test data ends exactly at the 31st of December, when choosing December 1 as starting date.
