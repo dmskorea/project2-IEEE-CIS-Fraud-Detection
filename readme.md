@@ -12,6 +12,24 @@ DMS.Korea Leaderboard
 
 
 <hr />
+2019-08-12 단머스2기 이메일
+<hr />
+
+- 현종열 : jacobgreen4477@gmail.com
+- 조승우 : alectos@naver.com
+- 장주호 : jh.zhiang@gmail.com
+- 최지원 : jionysos.c@gmail.com
+- 김민주 : democracy7770@gmail.com
+- 하진성 : jinsung.ha929@gmail.com
+- 석기명 : zeroshift01@naver.com
+- 송현정 : halohj12@gmail.com
+- 김윤영 : kyy0810@naver.com
+- 전승유 : 
+- 양현일 : 
+- 이윤선 : 
+- 박민규 : 
+
+<hr />
 2019-08-11 커널 주요내용
 <hr />
 
