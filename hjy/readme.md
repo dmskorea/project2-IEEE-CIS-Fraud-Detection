@@ -75,8 +75,8 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/100778#latest-589021
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/103439#latest-596759
 
 - Use a good open source single mode：
-https://www.kaggle.com/timon88/lgbm-baseline-small-fe-no-blend
-https://www.kaggle.com/nroman/lgb-single-model-lb-0-9419
-https://www.kaggle.com/artgor/eda-and-models
+- https://www.kaggle.com/timon88/lgbm-baseline-small-fe-no-blend
+- https://www.kaggle.com/nroman/lgb-single-model-lb-0-9419
+- https://www.kaggle.com/artgor/eda-and-models
 - Integrate their useful information
 - Increase feature（counts,aggregations）
