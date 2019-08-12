@@ -1,3 +1,9 @@
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/102883#latest-593864
+
+AutoLGB, https://www.kaggle.com/jeongyoonlee/kaggler-s-autolgb
+
+***
+
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/100333#latest-583866
 
 faster read dataset!!!
