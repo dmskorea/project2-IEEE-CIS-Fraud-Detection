@@ -1,3 +1,26 @@
+
+
+- isFraud : 타겟변수
+- TransactionDT : 거래시간
+- TransactionAmt : 거래금액
+- ProductCD : 상품대분류(W,C,R,H,S)
+- card1 ~ card6 : payment card information, such as card type, card category, issue bank, country, etc.
+- addr1 : 도시
+- addr2 : 나라 
+- dist1 : distance
+- dist2 : distance
+- P_emaildomain : Purchaser 이메일 주소
+- R_emaildomain : Recipient 이메일 주소 
+- C1 ~ C14 : counting, such as how many addresses are found to be associated with the payment card, etc. The actual meaning is masked.
+- D1 ~ D15 : timedelta, such as days between previous transaction, etc.
+- M1 ~ M9 : match, such as names on card and address, etc.
+- V1 ~ V339 : Vesta engineered rich features, including ranking, counting, and other entity relations.
+- id_01 ~ id_38 : identity information – network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions. 
+- DeviceType : mobile, desktop
+- DeviceInfo : SAMSUNG,Windows,MacOS, ...
+
+***
+
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/102883#latest-593864
 
 AutoLGB, https://www.kaggle.com/jeongyoonlee/kaggler-s-autolgb
