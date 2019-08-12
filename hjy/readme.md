@@ -25,3 +25,21 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/100071#latest-589485
 
 - the TransactionDT column is measured in seconds, starting at December 1.
 - There are peaks in the number of transactions at around 25 days and around 390 days (exactly 365 days later), which could be caused by increased sales around the christmas period. The test data ends exactly at the 31st of December, when choosing December 1 as starting date.
+
+***
+
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/100071#latest-589485
+
+- Pemaildomain and Remaildomain 
+- P is Purchaser and R is Recipient
+- This might not be a good decision due to some of these binned values having drastically different rates of fraud. For example with the Microsoft bin, msn has a fraud rate around 2.2% while outlook is around 9.5%.
+
+```
+yahoo / ymail / frontier / rocketmail -> Yahoo
+hotmail / outlook / live / msn -> Microsoft
+icloud / mac / me -> Appe
+prodigy / att / sbcglobal-> AT&T
+centurylink / embarqmail / q -> Centurylink
+aim / aol -> AOL
+twc / charter -> Spectrum
+```
