@@ -69,3 +69,14 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/102940#latest-597149
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/100778#latest-589021
 
 - The Pemaildomain tells a lot about the isFraud. 95% transaction made by protonmail.com, isFraud=1 Also, 40% transaction made by protonmail.com in Remaildomain, isFraud=1
+
+***
+
+https://www.kaggle.com/c/ieee-fraud-detection/discussion/103439#latest-596759
+
+- Use a good open source single mode：
+https://www.kaggle.com/timon88/lgbm-baseline-small-fe-no-blend
+https://www.kaggle.com/nroman/lgb-single-model-lb-0-9419
+https://www.kaggle.com/artgor/eda-and-models
+- Integrate their useful information
+- Increase feature（counts,aggregations）
