@@ -4,6 +4,9 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/100400#latest-594758
 - The hour of the day is D9
 - train['D9'] = (X_train['TransactionDT']%(3600*24)/3600//1)/24.0
 - But the feature D9 has too many null values (nearly 87%) so I guess we should still extract hour of the day from TransactionDT
+-  you were absolutely right about useless of year and month . But minute , second are really useful. I am now trying some time based features.
+- Hour and TransactionPerHour features worked for me.
+- HourTransactionVolume, DayTransactionVolume
 
 ```
 START_DATE = '2017-12-01'
@@ -15,4 +18,3 @@ X_train['dow'] = X_train['TransactionDT'].dt.dayofweek
 X_train['hour'] = X_train['TransactionDT'].dt.hour
 X_train['day'] = X_train['TransactionDT'].dt.day
 ```
-
