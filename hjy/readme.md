@@ -1,4 +1,4 @@
-
+변수 목록
 
 - isFraud : 타겟변수
 - TransactionDT : 거래시간
