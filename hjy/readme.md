@@ -6,8 +6,8 @@ my leaderboard
 |-----------|----------|-----------------|----|--------------|
 | 0.9330 | 0.9270 | TimeSeiresSplit CV=05 | LGB | 396 | 
 | 0.9382 | 0.9292 | TimeSeiresSplit CV=10 | LGB | 396 | 
-| 0.9382 | 0.9292 | TimeSeiresSplit CV=03 | LGB | 396 | 
-| 0.9382 | 0.9292 | TimeSeiresSplit CV=07 | LGB | 396 | 
+|  |  | TimeSeiresSplit CV=03 | LGB | 396 | 
+|  |  | TimeSeiresSplit CV=07 | LGB | 396 | 
 
 
 
