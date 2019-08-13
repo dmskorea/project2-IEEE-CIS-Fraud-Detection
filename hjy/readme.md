@@ -2,7 +2,7 @@ my leaderboard
 
 > FE : time of day(3), missing value(1),  lastest_browser(1), emaildomain(2), card(6), addr(2), aggregate(16), decimal(1)
 
-| score(CV) | score(PL)| trial and error | ML | # of feature | 
+| score(CV) | score(PL)| trial and error | ML | # of features | 
 |-----------|----------|-----------------|----|--------------|
 | 0.9330 | 0.9270 | TimeSeiresSplit CV=05 | LGB | 396 | 
 | 0.9382 | 0.9292 | TimeSeiresSplit CV=10 | LGB | 396 | 
