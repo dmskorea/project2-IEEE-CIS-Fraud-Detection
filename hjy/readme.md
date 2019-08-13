@@ -1,3 +1,11 @@
+Q: how many features for feature aggregation?
+Q: in terms of data split, hold-out, time series split, or random split?
+Q: any interaction features?
+Q: the optimal k for cv? 
+Q: the optimal params for LGB?
+
+***
+
 benchmark 
 
 - 0045 features CV 0.9172 LB 0.9465
