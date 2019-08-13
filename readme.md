@@ -25,7 +25,7 @@ DMS.Korea Leaderboard
 - 김윤영 : kyy0810@naver.com
 - 전승유 : b00307795@essec.edu
 - 양현일 : 
-- 이윤선 : 
+- 이윤선 : yoonseon555@gmail.com
 - 박민규 : ruserive@gmail.com
 
 <hr />
