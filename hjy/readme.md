@@ -49,9 +49,6 @@ for(a in colnames(char_features) ){
 }
 
 fe_part1 <- fe_part1[,-1]
-rm(char_features,tem1) ; invisible(gc())
-cat("fe_part1 ncol :" , ncol(fe_part1) ,"\n" )
-###############################################
 ```
 
 ***
