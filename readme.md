@@ -23,7 +23,7 @@ DMS.Korea Leaderboard
 - 석기명 : zeroshift01@naver.com
 - 송현정 : halohj12@gmail.com
 - 김윤영 : kyy0810@naver.com
-- 전승유 : 
+- 전승유 : b00307795@essec.edu
 - 양현일 : 
 - 이윤선 : 
 - 박민규 : 
