@@ -1,9 +1,9 @@
-| 알고리즘 | 변수개수 | 전처리 | score(CV) | score(PL)|
-|---------|---------|--------|-----------|----------|
-| LGB | 350 | TimeSeiresSplit CV=3 | 0.91 | 0.92 |
-| LGB | 350 | TimeSeiresSplit CV=5 | 0.91 | 0.92 |
-| LGB | 350 | TimeSeiresSplit CV=7 | 0.91 | 0.92 |
-| LGB | 350 | TimeSeiresSplit CV=10 | 0.91 | 0.92 |
+| 알고리즘 | FE | 변수개수 | 전처리 | score(CV) | score(PL)|
+|---------|----|---------|--------|-----------|----------|
+| LGB | time of day, null, missing value | 350 | TimeSeiresSplit CV=3 | 0.91 | 0.92 |
+| LGB | time of day, null, missing value | 350 | TimeSeiresSplit CV=5 | 0.91 | 0.92 |
+| LGB | time of day, null, missing value | 350 | TimeSeiresSplit CV=7 | 0.91 | 0.92 |
+| LGB | time of day, null, missing value | 350 | TimeSeiresSplit CV=10 | 0.91 | 0.92 |
 
 
 ***
