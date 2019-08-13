@@ -13,6 +13,7 @@ my leaderboard
 
 | score(CV) | score(PL)| trial and error | ML | # of features | 
 |-----------|----------|-----------------|----|--------------|
+|  |  | TimeSeiresSplit CV=20 | LGB | 396 | 
 | 0.9382 | 0.9292 | TimeSeiresSplit CV=10 | LGB | 396 | 
 | 0.9044 | 0.9237 | TimeSeiresSplit CV=07 | LGB | 396 | 
 | 0.9330 | 0.9270 | TimeSeiresSplit CV=05 | LGB | 396 | 
