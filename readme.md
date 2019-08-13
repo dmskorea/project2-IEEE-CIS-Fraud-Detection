@@ -26,7 +26,7 @@ DMS.Korea Leaderboard
 - 전승유 : b00307795@essec.edu
 - 양현일 : 
 - 이윤선 : 
-- 박민규 : 
+- 박민규 : ruserive@gmail.com
 
 <hr />
 2019-08-11 커널 주요내용
