@@ -29,7 +29,16 @@ my leaderboard
 
 ***
 
+indicator feature: protonmail.com
 
+```
+train['P_isproton']=(train['P_emaildomain']=='protonmail.com')
+train['R_isproton']=(train['R_emaildomain']=='protonmail.com')
+test['P_isproton']=(test['P_emaildomain']=='protonmail.com')
+test['R_isproton']=(test['R_emaildomain']=='protonmail.com')
+```
+
+***
 
 count encoding
 
