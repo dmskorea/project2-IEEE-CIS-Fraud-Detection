@@ -131,12 +131,6 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/101040#latest-590616
 
 https://www.kaggle.com/c/ieee-fraud-detection/discussion/102940#latest-597149
 
-- 0045 features CV 0.9172 LB 0.9465 
-- 0050 features CV 0.9258 LB 0.9480
-- 0408 features CV 0.9450 LB 0.9460
-- 0558 features CV 0.9265 LB 0.9472
-- 0650 features CV 0.9389 LB 0.9502
-- 1800 features CV 0.9400 LB 0.9492
 - TimeSeriesSplit is highly influenced by the training set size (I tested with 10 folds different baseline models (xgboost,lighgbm,catboost)and there seems to be a fairly linear relationship between validation AUC and train size. 
 
 ***
