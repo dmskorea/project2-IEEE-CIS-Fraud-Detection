@@ -131,3 +131,7 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/103439#latest-596759
 - https://www.kaggle.com/artgor/eda-and-models
 - Integrate their useful information
 - Increase feature（counts,aggregations）
+
+***
+
+https://datascience-enthusiast.com/R/pandas_datatable.html
