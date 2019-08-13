@@ -1,3 +1,12 @@
+benchmark 
+
+- 0045 features CV 0.9172 LB 0.9465
+- 0050 features CV 0.9258 LB 0.9480
+- 0408 features CV 0.9450 LB 0.9460
+- 0558 features CV 0.9265 LB 0.9472
+- 0650 features CV 0.9389 LB 0.9502
+- 1800 features CV 0.9400 LB 0.9492
+
 my leaderboard
 
 > FE : time of day(3), missing value(1),  lastest_browser(1), emaildomain(2), card(6), addr(2), aggregate(16), decimal(1)
