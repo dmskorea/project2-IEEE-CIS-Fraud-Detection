@@ -1,36 +1,22 @@
-# 86400 -> 2017-12-02 00:00:00
+# TransactionDT 날짜 변환 (86400 -> 2017-12-02 00:00:00)
 train['TransactionDT'] = train['TransactionDT'].apply(lambda x: (startdate + datetime.timedelta(seconds = x)))
 
 # sum of missing values
 train['nulls1'] = train.isna().sum(axis=1)
 
+# 최신 브라우저 여부
 # train = setbrowser(train)
-# 최신 브라우저이면 1 아니면 0
 train = setbrowser(train)
 
-# email (_bin/_suffix)
+# email 주소 파싱(_bin/_suffix)
 _bin : 이메일 카테고리 그룹핑
 _suffix : 이메일주소 마지막 단어 (com, net, etc)
 
-# card
+# card1~6 (카드정보 count encoding)
+# card4: 카드종류1, visa/mastercard etc..
+# card6: 카드종류2, debit/credet etc..
+train['card1_count_full'] = train['card1'].map(pd.concat([train['card1'], test['card1']], ignore_index=True).value_counts(dropna=False))
 
+# addr1~2 (주소 count encoding)
+train['addr1_count_full'] = train['addr1'].map(pd.concat([train['addr1'], test['addr1']], ignore_index=True).value_counts(dropna=False))
 
-[변수 목록]
-isFraud : 타겟변수
-TransactionDT : 거래시간
-TransactionAmt : 거래금액
-ProductCD : 상품대분류(W,C,R,H,S)
-card1 ~ card6 : payment card information, such as card type, card category, issue bank, country, etc.
-addr1 : 도시
-addr2 : 나라
-dist1 : distance
-dist2 : distance
-P_emaildomain : Purchaser 이메일 주소
-R_emaildomain : Recipient 이메일 주소
-C1 ~ C14 : counting, such as how many addresses are found to be associated with the payment card, etc. The actual meaning is masked.
-D1 ~ D15 : timedelta, such as days between previous transaction, etc.
-M1 ~ M9 : match, such as names on card and address, etc.
-V1 ~ V339 : Vesta engineered rich features, including ranking, counting, and other entity relations.
-id_01 ~ id_38 : identity information – network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions.
-DeviceType : mobile, desktop
-DeviceInfo : SAMSUNG,Windows,MacOS, ...
