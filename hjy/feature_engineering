@@ -16,7 +16,7 @@ _suffix : 이메일주소 마지막 단어 (com, net, etc)
 train['TransactionAmt_decimal'] = ((train['TransactionAmt'] - train['TransactionAmt'].astype(int)) * 1000).astype(int)
 
 # ---
-# count encoding 
+# encoding 
 # ---
 
 # card1~6 (카드정보 count encoding)
@@ -27,6 +27,23 @@ train['card1_count_full'] = train['card1'].map(pd.concat([train['card1'], test['
 # addr1~2 (주소 count encoding)
 train['addr1_count_full'] = train['addr1'].map(pd.concat([train['addr1'], test['addr1']], ignore_index=True).value_counts(dropna=False))
 
+# Count encoded separately for train and test
+for feature in ['id_01', 'id_31', 'id_33', 'id_35']:
+    train[feature + '_count_dist'] = train[feature].map(train[feature].value_counts(dropna=False))
+    test[feature + '_count_dist'] = test[feature].map(test[feature].value_counts(dropna=False))
+
+# two featrues label encoding
+for feature in ['id_02__id_20', 'id_02__D8', 'D11__DeviceInfo', 'DeviceInfo__P_emaildomain', 'P_emaildomain__C2', 'card2__dist1', 'card1__card5', 'card2__id_20', 'card5__P_emaildomain', 'addr1__card1']:
+
+    f1, f2 = feature.split('__')
+    train[feature] = train[f1].astype(str) + '_' + train[f2].astype(str)
+    test[feature] = test[f1].astype(str) + '_' + test[f2].astype(str)
+
+    le = preprocessing.LabelEncoder()
+    le.fit(list(train[feature].astype(str).values) + list(test[feature].astype(str).values))
+    train[feature] = le.transform(list(train[feature].astype(str).values))
+    test[feature] = le.transform(list(test[feature].astype(str).values))
+    
 # ---
 # feature aggregation
 # ---
@@ -61,3 +78,5 @@ D15_to_std_addr1
 1) many_null_cols
 2) big_top_value_cols
 3) one_value_cols
+
+
