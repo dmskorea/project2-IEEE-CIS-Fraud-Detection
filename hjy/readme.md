@@ -22,6 +22,13 @@ my leaderboard
 
 | score(CV) | score(PL)| trial and error | ML | # of features | 
 |-----------|----------|-----------------|----|--------------|
+| | | TimeSeriesSplit | LGB | 396 | 
+| | | KFolds | LGB | 396 | 
+| | | hold-out(0.74) | LGB | 396 | 
+| | | hold-out(0.87) | LGB | 396 | 
+
+| score(CV) | score(PL)| trial and error | ML | # of features | 
+|-----------|----------|-----------------|----|--------------|
 | 0.9522 | 0.9306 | TimeSeiresSplit CV=20 | LGB | 396 | 
 | 0.9382 | 0.9292 | TimeSeiresSplit CV=10 | LGB | 396 | 
 | 0.9044 | 0.9237 | TimeSeiresSplit CV=07 | LGB | 396 | 
