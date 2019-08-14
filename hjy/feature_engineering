@@ -12,6 +12,10 @@ train = setbrowser(train)
 _bin : 이메일 카테고리 그룹핑
 _suffix : 이메일주소 마지막 단어 (com, net, etc)
 
+# ---
+# count encoding 
+# ---
+
 # card1~6 (카드정보 count encoding)
 # card4: 카드종류1, visa/mastercard etc..
 # card6: 카드종류2, debit/credet etc..
@@ -20,3 +24,28 @@ train['card1_count_full'] = train['card1'].map(pd.concat([train['card1'], test['
 # addr1~2 (주소 count encoding)
 train['addr1_count_full'] = train['addr1'].map(pd.concat([train['addr1'], test['addr1']], ignore_index=True).value_counts(dropna=False))
 
+# ---
+# feature aggregation
+# ---
+
+# 카드종류별(card4) 평균/표준편차 거래금액
+TransactionAmt_to_mean_card1
+TransactionAmt_to_mean_card4
+TransactionAmt_to_std_card1
+TransactionAmt_to_std_card4
+
+# 카드종류별(card4) 평균/표준편차 id_02
+id_02_to_mean_card1
+id_02_to_mean_card4
+id_02_to_std_card1
+id_02_to_std_card4
+
+# 카드종류별(card4) 평균/표준편차 거래금액차이
+D15_to_mean_card1
+D15_to_mean_card4
+D15_to_std_card1
+D15_to_std_card4
+
+# 주소별 평균/표준편차 거래금액차이
+D15_to_mean_addr1
+D15_to_std_addr1
