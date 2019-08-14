@@ -30,6 +30,35 @@ my leaderboard
 
 ***
 
+model
+
+```
+def fit_predict(X, y, X_test, folds, model_params, training_params):
+    in_fold, out_of_fold, test_preds = np.zeros(len(X)), np.zeros(len(X)), np.zeros(len(X_test))
+    for fold_nr, (trn_idx, val_idx) in enumerate(folds.split(X.values, y.values)):
+        print("Fold {}".format(fold_nr))
+
+        X_train, y_train = X.iloc[trn_idx], y.iloc[trn_idx]
+        X_valid, y_valid = X.iloc[val_idx], y.iloc[val_idx]
+
+        trn_data = lgb.Dataset(X_train, y_train)
+        val_data = lgb.Dataset(X_valid, y_valid)
+        
+        # add live monitoring of lightgbm learning curves
+        monitor = neptune_monitor(prefix='fold{}_'.format(fold_nr))
+        clf = lgb.train(model_params, trn_data, 
+                        training_params['num_boosting_rounds'], 
+                        valid_sets = [trn_data, val_data], 
+                        early_stopping_rounds = training_params['early_stopping_rounds'],
+                        callbacks=[monitor])
+        in_fold[trn_idx] = clf.predict(X.iloc[trn_idx], num_iteration=clf.best_iteration)
+        out_of_fold[val_idx] = clf.predict(X.iloc[val_idx], num_iteration=clf.best_iteration)
+        test_preds += clf.predict(X_test, num_iteration=clf.best_iteration) / folds.n_splits
+    return in_fold, out_of_fold, test_preds    
+```
+
+***
+
 indicator feature: protonmail.com
 
 ```
