@@ -1,0 +1,15 @@
+# 86400 -> 2017-12-02 00:00:00
+train['TransactionDT'] = train['TransactionDT'].apply(lambda x: (startdate + datetime.timedelta(seconds = x)))
+
+# sum of missing values
+train['nulls1'] = train.isna().sum(axis=1)
+
+# train = setbrowser(train)
+# 최신 브라우저이면 1 아니면 0
+train = setbrowser(train)
+
+# email (_bin/_suffix)
+_bin : 이메일 카테고리 그룹핑
+_suffix : 이메일주소 마지막 단어 (com, net, etc)
+
+# card
