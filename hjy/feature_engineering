@@ -75,7 +75,7 @@ D15_to_mean_addr1
 D15_to_std_addr1
 
 # ---
-# feature variance 
+# etc
 # ---
 
 # drop features
@@ -83,4 +83,5 @@ D15_to_std_addr1
 2) big_top_value_cols
 3) one_value_cols
 
-
+# missing value
+repalce missing values with {num : mean, cat : -999}
