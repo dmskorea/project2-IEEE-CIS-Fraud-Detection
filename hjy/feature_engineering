@@ -75,7 +75,7 @@ D15_to_mean_addr1
 D15_to_std_addr1
 
 # ---
-# post process for FE
+# feature variance 
 # ---
 
 # drop features
