@@ -12,6 +12,9 @@ train = setbrowser(train)
 _bin : 이메일 카테고리 그룹핑
 _suffix : 이메일주소 마지막 단어 (com, net, etc)
 
+# 거래금액 소수점
+train['TransactionAmt_decimal'] = ((train['TransactionAmt'] - train['TransactionAmt'].astype(int)) * 1000).astype(int)
+
 # ---
 # count encoding 
 # ---
@@ -49,3 +52,12 @@ D15_to_std_card4
 # 주소별 평균/표준편차 거래금액차이
 D15_to_mean_addr1
 D15_to_std_addr1
+
+# ---
+# post process for FE
+# ---
+
+# drop features
+1) many_null_cols
+2) big_top_value_cols
+3) one_value_cols
