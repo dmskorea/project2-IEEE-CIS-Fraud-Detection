@@ -119,6 +119,8 @@ fe_part1 <- fe_part1[,-1]
 - id_23 : proxy info
 - id_30 : device info ex.iOS 11.1.2, Android 7.0, Mac OS X 10_12_6
 - id_31 : browser info 
+- id_32 : 화면사이즈?
+- id_34 : match_status?
 - id_01 ~ id_38 : identity information – network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions. 
 - DeviceType : mobile, desktop
 - DeviceInfo : SAMSUNG,Windows,MacOS, ...
