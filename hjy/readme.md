@@ -116,7 +116,9 @@ fe_part1 <- fe_part1[,-1]
 - D1 ~ D15 : timedelta, such as days between previous transaction, etc.
 - M1 ~ M9 : match, such as names on card and address, etc.
 - V1 ~ V339 : Vesta engineered rich features, including ranking, counting, and other entity relations.
+- id_23 : proxy info
 - id_30 : device info ex.iOS 11.1.2, Android 7.0, Mac OS X 10_12_6
+- id_31 : browser info 
 - id_01 ~ id_38 : identity information – network connection information (IP, ISP, Proxy, etc) and digital signature (UA/browser/os/version, etc) associated with transactions. 
 - DeviceType : mobile, desktop
 - DeviceInfo : SAMSUNG,Windows,MacOS, ...
