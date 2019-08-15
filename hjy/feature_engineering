@@ -85,3 +85,22 @@ D15_to_std_addr1
 
 # missing value
 repalce missing values with {num : mean, cat : -999}
+
+
+
+https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+
+We can see that Card 1 and Card 2 has a large distribution of values, so maybe it will be better to get the log of these columns
+
+df_trans.loc[df_trans.card3.isin(df_trans.card3.value_counts()[df_trans.card3.value_counts() < 200].index), 'card3'] = "Others"
+df_trans.loc[df_trans.card5.isin(df_trans.card5.value_counts()[df_trans.card5.value_counts() < 300].index), 'card5'] = "Others"
+
+In Card3 we can see that 100 and 106 are the most common values in the column. 
+We have 4.95% of Frauds in 100 and 1.52% in 106; The values with highest Fraud Transactions are 185, 119 and 119; 
+
+In card5 the most frequent values are 226, 224, 166 that represents 73% of data. Also is posible to see high % of frauds in 137, 147, 141 that has few entries for values.
+
+df_train['TransactionAmt'] = np.log(df_train['TransactionAmt'])
+df_test['TransactionAmt'] = np.log(df_test['TransactionAmt'])
+
+https://www.kaggle.com/iasnobmatsu/xgb-model-with-feature-engineering
