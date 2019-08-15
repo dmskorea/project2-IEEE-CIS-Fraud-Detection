@@ -3,7 +3,7 @@
 - Q: any interaction features?
 - Q: the optimal k for cv? 
 - Q: the optimal params for LGB?
-- FE : https://www.kaggle.com/davidcairuz/feature-engineering-lightgbm-w-gpu
+- Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
 
 ***
 
