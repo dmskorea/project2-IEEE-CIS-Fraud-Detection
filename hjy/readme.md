@@ -37,6 +37,18 @@ my leaderboard
 
 ***
 
+label encoding
+
+```
+for col in train.columns:
+    if train[col].dtype == 'object':
+        le = LabelEncoder()
+        le.fit(list(train[col].astype(str).values) + list(test[col].astype(str).values))
+        train[col] = le.transform(list(train[col].astype(str).values))
+        test[col] = le.transform(list(test[col].astype(str).values))
+```
+***
+
 model
 
 ```
