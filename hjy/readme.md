@@ -1,3 +1,4 @@
+- GPU LGB
 - Q: how many features for feature aggregation?
 - Q: in terms of data split, hold-out, time series split, or random split?
 - Q: any interaction features?
