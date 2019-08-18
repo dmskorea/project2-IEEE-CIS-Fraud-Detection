@@ -1,5 +1,6 @@
 - GPU LGB
 - bayesian opt, https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt#2.-Bayesian-Optimisation
+- FE : https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - Q: how many features for feature aggregation?
 - Q: in terms of data split, hold-out, time series split, or random split?
 - Q: any interaction features?
