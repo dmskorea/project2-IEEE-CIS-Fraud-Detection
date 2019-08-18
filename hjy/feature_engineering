@@ -1,4 +1,33 @@
 # ---
+# 2019-08-18
+# ---
+
+ProductCD : C
+ProductCD * TransactionAmt
+Card3 : 185, 119, 144
+Card5 : 137
+Card4 : discover
+Card4_discover의 TransactionAmt
+M4 : M2
+addr1_251의 TransactionAmt
+addr2 : 65
+P_emaildomain : mail.com
+R_emaildomain : icloud.com, Google
+C1 : 0
+C1 19의 TransactionAmt
+C2는 numeric으로 변환
+Days  : 29, 30, 31
+Hours : 5~12
+id_12 : NaN
+id_15 : NaN
+id_16 : NaN
+id_23 : PROXY_ANONY.., NaN
+id_28 : NaN
+id_29 : NaN
+id_30 : others, func
+id_31 : others
+
+# ---
 # 2019-08-16
 # ---
 
