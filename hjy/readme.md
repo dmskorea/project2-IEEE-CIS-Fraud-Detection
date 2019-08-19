@@ -1,4 +1,5 @@
 - CatBoost, XGBoost, NN
+- train_model_classification : https://www.kaggle.com/artgor/eda-and-models
 - GPU LGB : https://www.kaggle.com/kirankunapuli/ieee-fraud-lightgbm-with-gpu
 - bayesian opt : https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt#2.-Bayesian-Optimisation
 - FE : https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
