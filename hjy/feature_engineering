@@ -2,6 +2,8 @@
 # 2019-08-19
 # ---
 
+TOP VI : TransactionAmt, card1 !!!!
+
 log(x), log(x+1), sqrt(x), x^2
 Signif
 Round
