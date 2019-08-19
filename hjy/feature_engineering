@@ -17,6 +17,14 @@ CV Target Mean Encoding
 knn features
 NULL featurs
 
+train_clean['TransactionAmt'] = np.log(train_clean['TransactionAmt']+1)
+train_clean['dist1'] = np.log(train_clean['dist1']+1)
+train_clean['dist2'] = np.log(train_clean['dist2']+1)
+
+test_clean['TransactionAmt'] = np.log(test_clean['TransactionAmt']+1)
+test_clean['dist1'] = np.log(test_clean['dist1']+1)
+test_clean['dist2'] = np.log(test_clean['dist2']+1)
+
 # ---
 # 2019-08-18
 # ---
