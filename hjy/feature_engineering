@@ -2,6 +2,7 @@
 # 2019-08-19
 # ---
 
+log(x), log(x+1), sqrt(x), x^2
 Signif
 Round
 NumToCat
