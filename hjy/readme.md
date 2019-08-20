@@ -63,6 +63,12 @@ hist_data = np.apply_along_axis(
     func1d=to_hist_func, 
     axis=1, 
     arr=(np.log1p(data[features])).astype(int)) 
+    
+%%time
+hist_test = np.apply_along_axis(
+    func1d=to_hist_func, 
+    axis=1, 
+    arr=(np.log1p(test[features])).astype(int))
 ```
 
 ***
