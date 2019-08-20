@@ -50,6 +50,23 @@ my leaderboard
 
 ***
 
+histogram feature
+
+```
+%%time
+def to_hist_func(row):
+    return np.bincount(row, minlength=30)
+
+features = [f for f in data.columns if f not in ['target', 'ID']]
+
+hist_data = np.apply_along_axis(
+    func1d=to_hist_func, 
+    axis=1, 
+    arr=(np.log1p(data[features])).astype(int)) 
+```
+
+***
+
 label encoding
 
 ```
