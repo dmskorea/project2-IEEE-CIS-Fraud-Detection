@@ -1,3 +1,5 @@
+TO-DO-LIST
+
 - feature selection
 - feature extraction
 - CatBoost, XGBoost, NN
@@ -7,12 +9,6 @@
 - FE : https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - FE : https://www.kaggle.com/jesucristo/fraud-complete-eda
 - FE : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
-- Q: how many features for feature aggregation?
-- Q: in terms of data split, hold-out, time series split, or random split?
-- Q: any interaction features?
-- Q: the optimal k for cv? 
-- Q: the optimal params for LGB?
-- Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
 
 ***
 
@@ -36,6 +32,15 @@ my leaderboard
 | 0.9044 | 0.9237 | TimeSeiresSplit CV=07 | LGB | 396 | 
 | 0.9330 | 0.9270 | TimeSeiresSplit CV=05 | LGB | 396 | 
 | 0.9260 | 0.9215 | TimeSeiresSplit CV=03 | LGB | 396 | 
+
+***
+
+- Q: how many features for feature aggregation?
+- Q: in terms of data split, hold-out, time series split, or random split?
+- Q: any interaction features?
+- Q: the optimal k for cv? 
+- Q: the optimal params for LGB?
+- Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
 
 ***
 
