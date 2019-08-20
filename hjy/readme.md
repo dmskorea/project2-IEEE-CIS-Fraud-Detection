@@ -1,5 +1,6 @@
 TO-DO-LIST
 
+- GPU!!!!
 - feature selection
 - feature extraction
 - CatBoost, XGBoost, NN
