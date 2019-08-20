@@ -1,5 +1,5 @@
 TO-DO-LIST
-
+- NOT WORKING!! -> averaging='rank', # rank,usual
 - GPU!!!!
 - GPU XGB with tune : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 - feature selection : https://www.kaggle.com/ogrellier/feature-selection-with-null-importances
