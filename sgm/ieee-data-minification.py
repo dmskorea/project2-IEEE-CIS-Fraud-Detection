@@ -1,10 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-# General imports
 import numpy as np
 import pandas as pd
 import os, warnings, random
@@ -13,25 +6,14 @@ from sklearn.preprocessing import LabelEncoder
 
 warnings.filterwarnings('ignore')
 
+path = 'C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/'
 
-# In[2]:
 
-
-########################### Helpers
-#################################################################################
-## -------------------
-## Seeder
-# :seed to make all processes deterministic     # type: int
 def seed_everything(seed=0):
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
     np.random.seed(seed)
-## ------------------- 
 
-## -------------------
-## Memory Reducer
-# :df pandas dataframe to reduce size             # type: pd.DataFrame()
-# :verbose                                        # type: bool
 def reduce_mem_usage(df, verbose=True):
     numerics = ['int16', 'int32', 'int64', 'float16', 'float32', 'float64']
     start_mem = df.memory_usage().sum() / 1024**2    
@@ -59,38 +41,20 @@ def reduce_mem_usage(df, verbose=True):
     end_mem = df.memory_usage().sum() / 1024**2
     if verbose: print('Mem. usage decreased to {:5.2f} Mb ({:.1f}% reduction)'.format(end_mem, 100 * (start_mem - end_mem) / start_mem))
     return df
-## -------------------
 
-
-# In[3]:
-
-
-########################### Vars
-#################################################################################
 SEED = 42
 seed_everything(SEED)
 LOCAL_TEST = False
 
 
-# In[4]:
-
-
-########################### DATA LOAD
-#################################################################################
 print('Load Data')
-train_df = pd.read_csv('../input/train_transaction.csv')
-test_df = pd.read_csv('../input/test_transaction.csv')
+train_df = pd.read_csv(path + 'train_transaction.csv')
+test_df = pd.read_csv(path + 'test_transaction.csv')
 test_df['isFraud'] = 0
 
-train_identity = pd.read_csv('../input/train_identity.csv')
-test_identity = pd.read_csv('../input/test_identity.csv')
+train_identity = pd.read_csv(path + 'train_identity.csv')
+test_identity = pd.read_csv(path + 'test_identity.csv')
 
-
-# In[5]:
-
-
-########################### Base check
-#################################################################################
 
 if LOCAL_TEST:
     for df2 in [train_df, test_df, train_identity, test_identity]:
@@ -101,11 +65,6 @@ if LOCAL_TEST:
                 print('Bad transformation', col)
 
 
-# In[6]:
-
-
-########################### Base Minification
-#################################################################################
 
 train_df = reduce_mem_usage(train_df)
 test_df  = reduce_mem_usage(test_df)
@@ -114,55 +73,6 @@ train_identity = reduce_mem_usage(train_identity)
 test_identity  = reduce_mem_usage(test_identity)
 
 
-# In[7]:
-
-
-########################### Columns
-#################################################################################
-## Main Data
-# 'TransactionID',
-# 'isFraud',
-# 'TransactionDT',
-# 'TransactionAmt',
-# 'ProductCD',
-# 'card1' - 'card6',
-# 'addr1' - 'addr2',
-# 'dist1' - 'dist2',
-# 'P_emaildomain' - 'R_emaildomain',
-# 'C1' - 'C14'
-# 'D1' - 'D15'
-# 'M1' - 'M9'
-# 'V1' - 'V339'
-
-## Identity Data
-# 'TransactionID'
-# 'id_01' - 'id_38'
-# 'DeviceType',
-# 'DeviceInfo'
-
-
-# In[8]:
-
-
-########################### TransactionID
-#################################################################################
-## Possible minification - but it will not give any boost
-
-# tID_min = train_df['TransactionID'].min()
-# train_df['TransactionID'] = train_df['TransactionID'] - tID_min
-# test_df['TransactionID']  = test_df['TransactionID'] - tID_min
-# train_identity['TransactionID'] = train_identity['TransactionID'] - tID_min
-# test_identity['TransactionID']  = test_identity['TransactionID'] - tID_min
-
-
-# In[9]:
-
-
-########################### card4, card6, ProductCD
-#################################################################################
-# Converting Strings to ints(or floats if nan in column) using frequency encoding
-# We will be able to use these columns as category or as numerical feature
-
 for col in ['card4', 'card6', 'ProductCD']:
     print('Encoding', col)
     temp_df = pd.concat([train_df[[col]], test_df[[col]]])
@@ -170,14 +80,6 @@ for col in ['card4', 'card6', 'ProductCD']:
     train_df[col] = train_df[col].map(col_encoded)
     test_df[col]  = test_df[col].map(col_encoded)
     print(col_encoded)
-
-
-# In[10]:
-
-
-########################### M columns
-#################################################################################
-# Converting Strings to ints(or floats if nan in column)
 
 for col in ['M1','M2','M3','M5','M6','M7','M8','M9']:
     train_df[col] = train_df[col].map({'T':1, 'F':0})
@@ -191,12 +93,6 @@ for col in ['M4']:
     test_df[col]  = test_df[col].map(col_encoded)
     print(col_encoded)
 
-
-# In[11]:
-
-
-########################### Identity columns
-#################################################################################
 
 def minify_identity_df(df):
 
@@ -241,12 +137,6 @@ for col in ['id_33']:
     test_identity[col]  = le.transform(test_identity[col])
 
 
-# In[12]:
-
-
-########################### Final Minification
-#################################################################################
-
 train_df = reduce_mem_usage(train_df)
 test_df  = reduce_mem_usage(test_df)
 
@@ -254,15 +144,8 @@ train_identity = reduce_mem_usage(train_identity)
 test_identity  = reduce_mem_usage(test_identity)
 
 
-# In[13]:
-
-
-########################### Export
-#################################################################################
-
 train_df.to_pickle('train_transaction.pkl')
 test_df.to_pickle('test_transaction.pkl')
 
 train_identity.to_pickle('train_identity.pkl')
 test_identity.to_pickle('test_identity.pkl')
-
