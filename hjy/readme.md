@@ -1,3 +1,5 @@
+- feature selection
+- feature extraction
 - CatBoost, XGBoost, NN
 - train_model_classification : https://www.kaggle.com/artgor/eda-and-models
 - GPU LGB : https://www.kaggle.com/kirankunapuli/ieee-fraud-lightgbm-with-gpu
