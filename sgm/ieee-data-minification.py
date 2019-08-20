@@ -59,11 +59,9 @@ test_identity = pd.read_csv(path + 'test_identity.csv')
 if LOCAL_TEST:
     for df2 in [train_df, test_df, train_identity, test_identity]:
         df = reduce_mem_usage(df2)
-
         for col in list(df):
             if not df[col].equals(df2[col]):
                 print('Bad transformation', col)
-
 
 
 train_df = reduce_mem_usage(train_df)
