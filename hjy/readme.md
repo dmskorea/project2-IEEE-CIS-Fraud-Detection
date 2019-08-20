@@ -14,6 +14,7 @@ TO-DO-LIST
 - FE : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 - FE2 : https://www.kaggle.com/jacobgreen4477/extensive-eda-and-modeling-xgb-hyperopt/edit
 - FE2 : https://www.kaggle.com/jolly2136/fe-xgb/output
+- FE3 : histogram feature, https://www.kaggle.com/ogrellier/using-histogram-as-feature-1-43
 
 ***
 
