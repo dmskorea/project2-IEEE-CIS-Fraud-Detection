@@ -1,6 +1,7 @@
 TO-DO-LIST
 
 - GPU!!!!
+- GPU XGB with tune : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 - feature selection
 - feature extraction
 - CatBoost, XGBoost, NN
