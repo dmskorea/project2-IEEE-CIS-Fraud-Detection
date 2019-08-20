@@ -1,4 +1,5 @@
 TO-DO-LIST
+- PCA + V or only PCA or only V 
 - NOT WORKING!! -> averaging='rank', # rank,usual
 - GPU!!!!
 - GPU XGB with tune : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
