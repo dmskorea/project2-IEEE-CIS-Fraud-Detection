@@ -11,6 +11,7 @@ TO-DO-LIST
 - FE : https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - FE : https://www.kaggle.com/jesucristo/fraud-complete-eda
 - FE : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+- FE : https://www.kaggle.com/jacobgreen4477/extensive-eda-and-modeling-xgb-hyperopt/edit
 
 ***
 
