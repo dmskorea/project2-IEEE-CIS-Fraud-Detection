@@ -259,3 +259,72 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/103439#latest-596759
 ***
 
 https://datascience-enthusiast.com/R/pandas_datatable.html
+
+***
+NN
+
+```
+# model
+def get_model(embedding_cols, numerical_cols):
+embedding_inp = [Input(shape=(1,),dtype='int32') for x in range(len(embedding_cols))]
+ex = [Embedding(output_dim=5, input_dim=1, embeddings_initializer='RandomUniform',
+               input_length=1)(x) for x in embedding_inp]
+ex = Concatenate(axis=1)(ex)
+ex_1 = Permute((2,1))(ex)
+max_pool = GlobalMaxPooling1D()(ex_1)
+avg_pool = GlobalAveragePooling1D()(ex_1)
+ex = Flatten()(ex)
+
+# TimeSeries
+# previous
+pre_ts_inp = Input(shape=(8,37))
+pre_ts_output = Bidirectional(CuDNNGRU(96,return_sequences=True))(pre_ts_inp)
+pre_ts_output = CuDNNGRU(128)(pre_ts_output)
+
+# bureau balance
+bb_ts_inp = Input(shape=(36,2))
+#bb_emb_inp = Lambda(lambda x: x[:, :,1])(bb_ts_inp)
+
+# pos
+pos_ts_inp = Input(shape=(36,7))
+ins_ts_inp = Input(shape=(36,7))
+bb_month_inp = Reshape((36,1))(Lambda(lambda x: x[:, :,0])(bb_ts_inp))
+cr_ts_inp = Input(shape=(36,33))
+
+x_ts_inp = concatenate([pos_ts_inp, ins_ts_inp, bb_month_inp, cr_ts_inp],axis=2)
+x_ts_output = Bidirectional(CuDNNGRU(64,return_sequences=True))(x_ts_inp)
+x_ts_output = CuDNNGRU(64)(x_ts_output)
+
+# install
+# bureau
+bu_ts_inp = Input(shape=(12,31))
+bu_ts_output = Bidirectional(CuDNNGRU(64,return_sequences=True))(bu_ts_inp)
+bu_ts_output = CuDNNGRU(64)(bu_ts_output)
+
+## Numerical inputs
+numerical_inp = Input(shape=(len(numerical_cols),), dtype='float32')
+x = BatchNormalization()(numerical_inp)
+
+x = concatenate([ex, max_pool, avg_pool, x,
+                 pre_ts_output,  bu_ts_output, x_ts_output])
+x = Dropout(0.2)(x)
+
+x = Dense(512)(x) #,kernel_regularizer=l1_l2(l1=0.0001, l2=0.0001)
+x = ELU()(x)
+x = Dropout(0.2)(x)
+
+x = Dense(128)(x) #,kernel_regularizer=l2(0.0001)
+x = ELU()(x)
+x = Dropout(0.2)(x)
+x = Dense(32)(x)
+x = ELU()(x)
+
+out = Dense(1, activation='sigmoid')(x)
+model = Model(embedding_inp+[numerical_inp, 
+                             pre_ts_inp, pos_ts_inp, ins_ts_inp, bu_ts_inp, bb_ts_inp, cr_ts_inp], 
+              out)
+
+optimizer = optimizers.Adam(lr=0.001)
+model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=[rocauc]) #
+return model
+```
