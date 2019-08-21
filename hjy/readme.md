@@ -1,4 +1,5 @@
 TO-DO-LIST
+- df['Float_a'] = pd.cut(x=df['Float_a'],bins=10, labels=[f'bin_{i}' for i in range(bins)])
 - https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
 - LGB tune : https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt
 - PCA + V or only PCA or only V 
