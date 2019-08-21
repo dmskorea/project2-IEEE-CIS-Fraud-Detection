@@ -1,4 +1,5 @@
 TO-DO-LIST
+- https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
 - LGB tune : https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt
 - PCA + V or only PCA or only V 
 - NOT WORKING!! -> averaging='rank', # rank,usual
