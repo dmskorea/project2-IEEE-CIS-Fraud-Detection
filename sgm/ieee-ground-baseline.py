@@ -21,7 +21,7 @@ def seed_everything(seed=0):
     np.random.seed(seed)
 
 
-SEED = 42
+SEED = 154
 seed_everything(SEED)
 LOCAL_TEST = False
 TARGET = 'isFraud'
