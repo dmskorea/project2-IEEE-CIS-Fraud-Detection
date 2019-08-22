@@ -1,4 +1,5 @@
 TO-DO-LIST
+- another FE : https://www.kaggle.com/nroman/eda-for-cis-fraud-detection
 - train_df=nan2mean(train_df)
 - jupyterlab : https://hub.gke.mybinder.org/user/jupyterlab-jupyterlab-demo-sudfcgxr/lab
 - weight average : https://www.kaggle.com/paulorzp/gmean-of-light-gbm-models-lb-0-9476
