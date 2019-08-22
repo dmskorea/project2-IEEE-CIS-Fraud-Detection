@@ -54,7 +54,7 @@ my leaderboard
 
 ***
 
-첫번째 방식이 
+첫번째 방식이 더 좋음 
 
 ```
 for col in list(train):
