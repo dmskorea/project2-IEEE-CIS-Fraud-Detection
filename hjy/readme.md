@@ -1,4 +1,5 @@
 TO-DO-LIST
+- weight average : https://www.kaggle.com/paulorzp/gmean-of-light-gbm-models-lb-0-9476
 - base_columns = list(train) + list(train_identity) 지우기 
 - df['Float_a'] = pd.cut(x=df['Float_a'],bins=10, labels=[f'bin_{i}' for i in range(bins)])
 - https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
