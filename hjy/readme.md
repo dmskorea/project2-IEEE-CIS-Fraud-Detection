@@ -4,7 +4,7 @@ TO-DO-LIST
 - base_columns = list(train) + list(train_identity) 지우기 
 - df['Float_a'] = pd.cut(x=df['Float_a'],bins=10, labels=[f'bin_{i}' for i in range(bins)])
 - https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
-- LGB tune : https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt
+- LGB tune : https://www.kaggle.com/nicapotato/gpyopt-hyperparameter-optimisation-gpu-lgbm
 - PCA + V or only PCA or only V 
 - NOT WORKING!! -> averaging='rank', # rank,usual
 - GPU!!!!
