@@ -2,12 +2,14 @@
 DMS.Korea Leaderboard
 <hr />
 
+benchmark
+- 650 features CV 0.9389 LB 0.9502
+- 1800 features CV 0.9400 LB 0.9492
+
 | date| name | 알고리즘 | 변수개수 | score(CV) | score(PL)|비고|
 |-----|------|---------|----------|-----------|---------|----|
-| 2019-08-19 | 현종열 | LGB | 498 | 0.9381 | 0.9483 | simple fe + lgb3 v2 |
-| 2019-08-19 | 현종열 | LGB | 493 | 0.9384 | 0.9480 | simple fe + lgb2 v8 |
-| 2019-08-19 | 현종열 | LGB | 493 | 0.9536 | 0.9479 | simple fe + lgb2 v7 |
-| 2019-08-18 | 현종열 | LGB | 493 | 0.9360 | 0.9478 | simple fe + lgb2 v6 |
+| 2019-08-22 | 현종열 | Stacking | 498 | - | 0.9492 | simple stacking v7 |
+| 2019-08-20 | 현종열 | LGB | 498 | 0.9509 | 0.9486 | simple fe + lgb3 v4 |
 |            | 　     | 　  | 　  |        |        |                     |
 |            | 　     | 　  | 　  |        |        |                     |
 

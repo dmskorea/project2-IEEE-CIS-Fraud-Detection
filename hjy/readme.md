@@ -1,3 +1,18 @@
+TO-DO-LIST
+- another FE : https://www.kaggle.com/nroman/eda-for-cis-fraud-detection
+- train_df=nan2mean(train_df)
+- jupyterlab : https://hub.gke.mybinder.org/user/jupyterlab-jupyterlab-demo-sudfcgxr/lab
+- weight average : https://www.kaggle.com/paulorzp/gmean-of-light-gbm-models-lb-0-9476
+- base_columns = list(train) + list(train_identity) 지우기 
+- df['Float_a'] = pd.cut(x=df['Float_a'],bins=10, labels=[f'bin_{i}' for i in range(bins)])
+- https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
+- LGB tune : https://www.kaggle.com/nicapotato/gpyopt-hyperparameter-optimisation-gpu-lgbm
+- PCA + V or only PCA or only V 
+- NOT WORKING!! -> averaging='rank', # rank,usual
+- GPU!!!!
+- GPU XGB with tune : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+- feature selection : https://www.kaggle.com/ogrellier/feature-selection-with-null-importances
+- feature extraction
 - CatBoost, XGBoost, NN
 - train_model_classification : https://www.kaggle.com/artgor/eda-and-models
 - GPU LGB : https://www.kaggle.com/kirankunapuli/ieee-fraud-lightgbm-with-gpu
@@ -5,12 +20,9 @@
 - FE : https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - FE : https://www.kaggle.com/jesucristo/fraud-complete-eda
 - FE : https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
-- Q: how many features for feature aggregation?
-- Q: in terms of data split, hold-out, time series split, or random split?
-- Q: any interaction features?
-- Q: the optimal k for cv? 
-- Q: the optimal params for LGB?
-- Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
+- FE2 : https://www.kaggle.com/jacobgreen4477/extensive-eda-and-modeling-xgb-hyperopt/edit
+- FE2 : https://www.kaggle.com/jolly2136/fe-xgb/output
+- FE3 : histogram feature, https://www.kaggle.com/ogrellier/using-histogram-as-feature-1-43
 
 ***
 
@@ -34,11 +46,66 @@ my leaderboard
 | 0.9044 | 0.9237 | TimeSeiresSplit CV=07 | LGB | 396 | 
 | 0.9330 | 0.9270 | TimeSeiresSplit CV=05 | LGB | 396 | 
 | 0.9260 | 0.9215 | TimeSeiresSplit CV=03 | LGB | 396 | 
-| | | TimeSeriesSplit | LGB | 396 | 
-| | | KFolds | LGB | 396 | 
-| | | hold-out(0.74) | LGB | 396 | 
-| | | hold-out(0.87) | LGB | 396 | 
 
+***
+
+- Q: how many features for feature aggregation?
+- Q: in terms of data split, hold-out, time series split, or random split?
+- Q: any interaction features?
+- Q: the optimal k for cv? 
+- Q: the optimal params for LGB?
+- Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
+
+***
+
+첫번째 방식이 더 좋음 
+
+```
+for col in list(train):
+    if train[col].dtype=='O':
+        print(col)
+        train[col] = train[col].fillna('unseen_before_label')
+        test[col]  = test[col].fillna('unseen_before_label')
+        
+        train[col] = train[col].astype(str)
+        test[col] = test[col].astype(str)
+        
+        le = LabelEncoder()
+        le.fit(list(train[col])+list(test[col]))
+        train[col] = le.transform(train[col])
+        test[col]  = le.transform(test[col])
+        
+        train[col] = train[col].astype('category')
+        test[col] = test[col].astype('category')
+
+le = LabelEncoder()
+for col in train.select_dtypes(include=['object', 'category']).columns:
+    le.fit(list(train[col].astype(str).values) + list(test[col].astype(str).values))
+    train[col] = le.transform(list(train[col].astype(str).values))
+    test[col] = le.transform(list(test[col].astype(str).values))
+```
+***
+
+histogram feature
+
+```
+%%time
+def to_hist_func(row):
+    return np.bincount(row, minlength=30)
+
+features = [f for f in data.columns if f not in ['target', 'ID']]
+
+hist_data = np.apply_along_axis(
+    func1d=to_hist_func, 
+    axis=1, 
+    arr=(np.log1p(data[features])).astype(int)) 
+    
+%%time
+hist_test = np.apply_along_axis(
+    func1d=to_hist_func, 
+    axis=1, 
+    arr=(np.log1p(test[features])).astype(int))
+```
 
 ***
 
@@ -252,3 +319,72 @@ https://www.kaggle.com/c/ieee-fraud-detection/discussion/103439#latest-596759
 ***
 
 https://datascience-enthusiast.com/R/pandas_datatable.html
+
+***
+NN
+
+```
+# model
+def get_model(embedding_cols, numerical_cols):
+embedding_inp = [Input(shape=(1,),dtype='int32') for x in range(len(embedding_cols))]
+ex = [Embedding(output_dim=5, input_dim=1, embeddings_initializer='RandomUniform',
+               input_length=1)(x) for x in embedding_inp]
+ex = Concatenate(axis=1)(ex)
+ex_1 = Permute((2,1))(ex)
+max_pool = GlobalMaxPooling1D()(ex_1)
+avg_pool = GlobalAveragePooling1D()(ex_1)
+ex = Flatten()(ex)
+
+# TimeSeries
+# previous
+pre_ts_inp = Input(shape=(8,37))
+pre_ts_output = Bidirectional(CuDNNGRU(96,return_sequences=True))(pre_ts_inp)
+pre_ts_output = CuDNNGRU(128)(pre_ts_output)
+
+# bureau balance
+bb_ts_inp = Input(shape=(36,2))
+#bb_emb_inp = Lambda(lambda x: x[:, :,1])(bb_ts_inp)
+
+# pos
+pos_ts_inp = Input(shape=(36,7))
+ins_ts_inp = Input(shape=(36,7))
+bb_month_inp = Reshape((36,1))(Lambda(lambda x: x[:, :,0])(bb_ts_inp))
+cr_ts_inp = Input(shape=(36,33))
+
+x_ts_inp = concatenate([pos_ts_inp, ins_ts_inp, bb_month_inp, cr_ts_inp],axis=2)
+x_ts_output = Bidirectional(CuDNNGRU(64,return_sequences=True))(x_ts_inp)
+x_ts_output = CuDNNGRU(64)(x_ts_output)
+
+# install
+# bureau
+bu_ts_inp = Input(shape=(12,31))
+bu_ts_output = Bidirectional(CuDNNGRU(64,return_sequences=True))(bu_ts_inp)
+bu_ts_output = CuDNNGRU(64)(bu_ts_output)
+
+## Numerical inputs
+numerical_inp = Input(shape=(len(numerical_cols),), dtype='float32')
+x = BatchNormalization()(numerical_inp)
+
+x = concatenate([ex, max_pool, avg_pool, x,
+                 pre_ts_output,  bu_ts_output, x_ts_output])
+x = Dropout(0.2)(x)
+
+x = Dense(512)(x) #,kernel_regularizer=l1_l2(l1=0.0001, l2=0.0001)
+x = ELU()(x)
+x = Dropout(0.2)(x)
+
+x = Dense(128)(x) #,kernel_regularizer=l2(0.0001)
+x = ELU()(x)
+x = Dropout(0.2)(x)
+x = Dense(32)(x)
+x = ELU()(x)
+
+out = Dense(1, activation='sigmoid')(x)
+model = Model(embedding_inp+[numerical_inp, 
+                             pre_ts_inp, pos_ts_inp, ins_ts_inp, bu_ts_inp, bb_ts_inp, cr_ts_inp], 
+              out)
+
+optimizer = optimizers.Adam(lr=0.001)
+model.compile(loss='binary_crossentropy', optimizer=optimizer, metrics=[rocauc]) #
+return model
+```

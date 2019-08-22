@@ -11,6 +11,7 @@ NumToCat
 Interaction Features
 Indicator Features
 PCA
+svd
 Cluster
 Weight of Evidence 
 CV Target Mean Encoding 
