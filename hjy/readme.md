@@ -1,5 +1,11 @@
 TO-DO-LIST
-- LGB tune : https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt
+- train_df=nan2mean(train_df)
+- jupyterlab : https://hub.gke.mybinder.org/user/jupyterlab-jupyterlab-demo-sudfcgxr/lab
+- weight average : https://www.kaggle.com/paulorzp/gmean-of-light-gbm-models-lb-0-9476
+- base_columns = list(train) + list(train_identity) 지우기 
+- df['Float_a'] = pd.cut(x=df['Float_a'],bins=10, labels=[f'bin_{i}' for i in range(bins)])
+- https://www.kaggle.com/yasagure/places-after-the-decimal-point-tell-us-a-lot
+- LGB tune : https://www.kaggle.com/nicapotato/gpyopt-hyperparameter-optimisation-gpu-lgbm
 - PCA + V or only PCA or only V 
 - NOT WORKING!! -> averaging='rank', # rank,usual
 - GPU!!!!
@@ -49,6 +55,34 @@ my leaderboard
 - Q: the optimal params for LGB?
 - Q: label encoding or one-hot encoding? ... that tree based models work well with Label Encodings even if there is no ordinal relationship. (check later)
 
+***
+
+첫번째 방식이 더 좋음 
+
+```
+for col in list(train):
+    if train[col].dtype=='O':
+        print(col)
+        train[col] = train[col].fillna('unseen_before_label')
+        test[col]  = test[col].fillna('unseen_before_label')
+        
+        train[col] = train[col].astype(str)
+        test[col] = test[col].astype(str)
+        
+        le = LabelEncoder()
+        le.fit(list(train[col])+list(test[col]))
+        train[col] = le.transform(train[col])
+        test[col]  = le.transform(test[col])
+        
+        train[col] = train[col].astype('category')
+        test[col] = test[col].astype('category')
+
+le = LabelEncoder()
+for col in train.select_dtypes(include=['object', 'category']).columns:
+    le.fit(list(train[col].astype(str).values) + list(test[col].astype(str).values))
+    train[col] = le.transform(list(train[col].astype(str).values))
+    test[col] = le.transform(list(test[col].astype(str).values))
+```
 ***
 
 histogram feature
