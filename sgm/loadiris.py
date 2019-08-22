@@ -18,3 +18,4 @@ scores = cross_val_score(dt_clf, data, label, scoring='accuracy', cv=3)
 
 print(np.round(scores,4))
 print(np.round(np.mean(scores),4))
+
