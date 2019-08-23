@@ -65,6 +65,12 @@ for col in cat_cols:
         le.fit(list(train_df[col].astype(str).values) + list(test_df[col].astype(str).values))
         train_df[col] = le.transform(list(train_df[col].astype(str).values))
         test_df[col] = le.transform(list(test_df[col].astype(str).values))
+        
+
+# TransactionAmt apply log
+train_df['TransactionAmt'] = train_df['TransactionAmt'].apply(np.log)
+test_df['TransactionAmt'] = test_df['TransactionAmt'].apply(np.log)
+
 
 # split train dataset into X and y
 X = train_df.drop(['isFraud'], axis=1)

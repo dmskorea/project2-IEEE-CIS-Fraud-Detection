@@ -64,8 +64,6 @@ train_transaction.loc[train_transaction['isFraud'] == 1] \
          ax=ax)
 plt.show()
 
-train_transaction['TransactionAmt'].apply(np.log)
-
 train_transaction['TransactionAmt'] \
     .apply(np.log) \
     .plot(kind='hist',
