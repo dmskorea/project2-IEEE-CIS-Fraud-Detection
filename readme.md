@@ -19,7 +19,6 @@ benchmark
 <hr />
 
 - 현종열 : jacobgreen4477@gmail.com
-- 조승우 : alectos@naver.com
 - 장주호 : jh.zhiang@gmail.com
 - 최지원 : jionysos.c@gmail.com
 - 김민주 : democracy7770@gmail.com
@@ -82,9 +81,8 @@ https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
 [B팀] (DMS.Korea.B)
 - B-01. 김윤영(kyy) : 단머스1기 멤버
 - B-02. 송현정(shj) : 단머스1기 멤버
-- B-03. 조승우(jsw) : 직장인, 주요언어Java, Python학습 중, 주요업무SM, SM 8년차
-- B-04. 장주호(jjh) : 연세대 의예과 본과 1학년, 주요언어 Python/R, 사용패키지 사이킷런, 방학기간이라 성실하게 follow up
-- B-05. 석기명(sgm) : 주요언어Java, R/Python 사용가능, kmean/DBSCAN 사용 경험, CNN/RNN 배우고 싶음 
+- B-03. 장주호(jjh) : 연세대 의예과 본과 1학년, 주요언어 Python/R, 사용패키지 사이킷런, 방학기간이라 성실하게 follow up
+- B-04. 석기명(sgm) : 주요언어Java, R/Python 사용가능, kmean/DBSCAN 사용 경험, CNN/RNN 배우고 싶음 
 
 [C팀] (DMS.Korea.C)
 - C-01. 전승유(jsy) : DB손해보험, 마키팅전략파트
