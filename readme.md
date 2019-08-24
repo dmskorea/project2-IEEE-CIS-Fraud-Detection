@@ -1,7 +1,7 @@
 <hr />
 DMS.Korea LeaderBoard
 <hr />
-
+graph TD
 C -->|One| D[Laptop]
 C -->|Two| E[iPhone]
 
