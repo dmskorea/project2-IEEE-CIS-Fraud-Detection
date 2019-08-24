@@ -24,6 +24,7 @@ DMS.Korea LeaderBoard
 2. 스터디 시간에 말씀드린데로 팀을 재구성했습니다. 
 - A팀 팀장은 현종열, B팀 팀장은 김윤영입니다.  
 - 팀장은 팀원들이 작업할 수 있는 공통 템플릿을 제공할 예정입니다. 공통 템플릿은 현종열님과 김윤영님이 작업한 내용을 종합해서 곧 공유드리겠습니다.
+- 2019-08-24 기준 A팀 최고성적은 CV:0.9509 LB:0.9486 B팀 최고성적은 CV:0.9394 LB:0.9500 입니다. 
 
 ![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM_20190824.png)
 
