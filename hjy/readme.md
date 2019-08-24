@@ -59,9 +59,8 @@ my leaderboard
 
 ***
 
-첫번째 방식이 더 좋음 
-
 ```
+# Encode Str columns
 for col in list(train):
     if train[col].dtype=='O':
         print(col)
@@ -76,14 +75,8 @@ for col in list(train):
         train[col] = le.transform(train[col])
         test[col]  = le.transform(test[col])
         
-        train[col] = train[col].astype('category')
-        test[col] = test[col].astype('category')
-
-le = LabelEncoder()
-for col in train.select_dtypes(include=['object', 'category']).columns:
-    le.fit(list(train[col].astype(str).values) + list(test[col].astype(str).values))
-    train[col] = le.transform(list(train[col].astype(str).values))
-    test[col] = le.transform(list(test[col].astype(str).values))
+        #train[col] = train[col].astype('category')
+        #test[col] = test[col].astype('category')
 ```
 ***
 
