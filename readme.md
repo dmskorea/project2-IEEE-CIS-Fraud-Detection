@@ -2,9 +2,7 @@
 DMS.Korea LeaderBoard
 <hr />
 
-graph TD;
-C -->|One| D[Laptop]
-C -->|Two| E[iPhone]
+![TEAM]https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM2.png
 
 benchmark
 - 650 features CV 0.9389 LB 0.9502
