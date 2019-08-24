@@ -2,7 +2,7 @@
 DMS.Korea LeaderBoard
 <hr />
 
-![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM2.png)
+![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM_0824.png)
 
 benchmark
 - 650 features CV 0.9389 LB 0.9502
