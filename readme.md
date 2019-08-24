@@ -2,12 +2,6 @@
 DMS.Korea LeaderBoard
 <hr />
 
-![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM_0824.png)
-
-benchmark
-- 650 features CV 0.9389 LB 0.9502
-- 1800 features CV 0.9400 LB 0.9492
-
 | date| name | 알고리즘 | 변수개수 | CV | LB | 비고 |
 |-----|------|---------|---------|----|-----|-----|
 | 2019-08-24 | 김윤영 | LGB | 411 | 0.9394 | 0.9500 | simple fe + addtional TargetMean |
@@ -18,6 +12,20 @@ benchmark
 | 2019-08-24 | 이윤선 | LGB | 329 | - | 0.9352 |   |
 | 2019-08-23 | 박민규 | LGB | 430 | - | 0.9245 |   |
 | 2019-08-24 | 김민주 | XGB | 413 | 0.8669 | 0.8551 | no fe + 5folds + xgb |
+
+<hr />
+2019-08-24 공지사항
+<hr />
+
+안녕하세요^^ 2019-08-24 공지사항 공유드립니다. 
+
+1. 김윤영님이 오늘부터 단머스 (부)운영진으로 활동하시게 되었습니다. 
+
+2. 스터디 시간에 말씀드린데로 팀을 재구성했습니다. 
+- A팀 팀장은 현종열, B팀 팀장은 김윤영입니다.  
+- 팀장은 팀원들이 작업할 수 있는 공통 템플릿을 제공할 예정입니다. 공통 템플릿은 현종열님과 김윤영님이 작업한 내용을 종합해서 곧 공유드리겠습니다.
+
+![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM_20190824.png)
 
 <hr />
 2019-08-23 공지사항
