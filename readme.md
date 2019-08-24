@@ -28,6 +28,33 @@ DMS.Korea LeaderBoard
 
 ![TEAM](https://raw.githubusercontent.com/dmskorea/project2-IEEE-CIS-Fraud-Detection/master/hjy/png/DMS_TEAM_20190824.png)
 
+3. 스터디룰을 다시 한번 공지드리면 아래의 경우에 해당되는 경우 팀에서 제외될 수 있습니다. 
+- 스터디 참여가 저조한 경우
+- 연속해서 스터디에 불참하는 경우 
+
+4. 보다 효율적인 스터디를 위해서 스터디 운영 방식을 변경합니다.
+- 새로운 스터디 방식 : 공통 템플릿이 제공되면, 그 템플릿을 기초로 아래의 영역 중 한가지 이상을 추가로 작업하여 CV,LB 점수가 향상되면 그 내용을 정리해서 스터디 시간에 발표 
+- 아래 URL를 각 영역별 참고 자료입니다. 
+
+1) 변수 샌성 (feature aggregation, target mean encoding, weight of evidence, indicator features, interaction features ...)
+- https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
+- https://www.kaggle.com/jesucristo/fraud-complete-eda
+- https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+- https://www.kaggle.com/jacobgreen4477/extensive-eda-and-modeling-xgb-hyperopt/edit
+- https://www.kaggle.com/jolly2136/fe-xgb/output
+- https://www.kaggle.com/ogrellier/using-histogram-as-feature-1-43
+- https://www.kaggle.com/willkoehrsen/introduction-to-manual-feature-engineering
+
+2) 변수 선택  
+- https://www.kaggle.com/ogrellier/feature-selection-with-null-importances
+- https://www.kaggle.com/willkoehrsen/introduction-to-feature-selection#Feature-Selection-through-Feature-Importances
+
+3) 모델 튜닝 (lgb, xgb, catboot, nn)  
+- https://www.kaggle.com/nicapotato/gpyopt-hyperparameter-optimisation-gpu-lgbm
+- https://www.kaggle.com/vincentlugat/ieee-lgb-bayesian-opt#2.-Bayesian-Optimisation
+- https://www.kaggle.com/ogrellier/home-credit-hyperopt-optimization
+- https://www.kaggle.com/willkoehrsen/automated-model-tuning
+
 <hr />
 2019-08-23 공지사항
 <hr />
