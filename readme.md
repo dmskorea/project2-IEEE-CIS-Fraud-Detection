@@ -6,7 +6,7 @@ DMS.Korea LeaderBoard
 |-----|------|---------|---------|----|-----|-----|
 | 2019-08-24 | 김윤영 | LGB | 411 | 0.9394 | 0.9500 | simple fe + addtional TargetMean |
 | 2019-08-23 | 현종열 | Stacking | 2 | - | 0.9493 | simple stacking v12 |
-| 2019-08-24 | 현종열 | LGB | 498 | 0.9509 | 0.9488 | simple fe + lgb4 v2 |
+| 2019-08-24 | 현종열 | LGB | 498 | 0.9508 | 0.9488 | simple fe + lgb4 v2 |
 | 2019-08-20 | 현종열 | LGB | 498 | 0.9509 | 0.9486 | simple fe + lgb3 v4 |
 | 2019-08-20 | 송현정 | LGB | 556 | 0.9372 | 0.9434 | simple fe + 5folds + lgb |
 | 2019-08-22 | 하진성 | LGB | - | - | 0.9378 | no fe + 5 folds + lgb |
