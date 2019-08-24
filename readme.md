@@ -40,6 +40,7 @@ DMS.Korea LeaderBoard
 - https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - https://www.kaggle.com/jesucristo/fraud-complete-eda
 - https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
+- https://www.kaggle.com/nroman/eda-for-cis-fraud-detection
 - https://www.kaggle.com/jolly2136/fe-xgb/output
 - https://www.kaggle.com/ogrellier/using-histogram-as-feature-1-43
 - https://www.kaggle.com/willkoehrsen/introduction-to-manual-feature-engineering
