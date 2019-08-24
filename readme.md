@@ -36,7 +36,7 @@ DMS.Korea LeaderBoard
 - 새로운 스터디 방식 : 공통 템플릿이 제공되면, 그 템플릿을 기초로 아래의 영역 중 한가지 이상을 추가로 작업하여 CV,LB 점수가 향상되면 그 내용을 정리해서 스터디 시간에 발표 
 - 아래 URL를 각 영역별 참고 자료입니다. 
 
-1) 변수 샌성 (feature aggregation, target mean encoding, weight of evidence, indicator features, interaction features ...)
+1) 변수 생성 (feature aggregation, target mean encoding, weight of evidence, indicator features, interaction features ...)
 - https://www.kaggle.com/robikscube/ieee-fraud-detection-first-look-and-eda
 - https://www.kaggle.com/jesucristo/fraud-complete-eda
 - https://www.kaggle.com/kabure/extensive-eda-and-modeling-xgb-hyperopt
