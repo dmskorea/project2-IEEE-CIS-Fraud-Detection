@@ -27,6 +27,18 @@ TO-DO-LIST
 
 ***
 
+[my VI]
+TransactionAmt
+card1
+uid2
+D15
+addr1
+hour
+card2
+card5
+
+***
+
 benchmark 
 
 - 0045 features CV 0.9172 LB 0.9465
