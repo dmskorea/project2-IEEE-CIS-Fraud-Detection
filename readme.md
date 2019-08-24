@@ -55,6 +55,12 @@ DMS.Korea LeaderBoard
 - https://www.kaggle.com/ogrellier/home-credit-hyperopt-optimization
 - https://www.kaggle.com/willkoehrsen/automated-model-tuning
 
+5. 공통템플릿을 1차 버전은 현재 notebook에서 LB점수가 가장 높은 notebook으로 사용합니다. 2차 버전은 추후에 공유드리겠습니다. 
+Python (LB: 0.9468)
+https://www.kaggle.com/kyakovlev/ieee-gb-2-make-amount-useful-again
+R (LB: 0.9452)
+https://www.kaggle.com/duykhanh99/lightgbm-fe-with-r
+
 <hr />
 2019-08-23 공지사항
 <hr />
