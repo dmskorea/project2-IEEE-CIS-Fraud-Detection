@@ -2,6 +2,9 @@
 DMS.Korea LeaderBoard
 <hr />
 
+C -->|One| D[Laptop]
+C -->|Two| E[iPhone]
+
 benchmark
 - 650 features CV 0.9389 LB 0.9502
 - 1800 features CV 0.9400 LB 0.9492
