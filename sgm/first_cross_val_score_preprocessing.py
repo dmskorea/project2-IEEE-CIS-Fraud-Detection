@@ -17,7 +17,7 @@ from sklearn.tree import DecisionTreeClassifier
 import numpy as np
 import pandas as pd
 
-path = 'C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/'
+path = 'C:/public/ieee-fraud-detection/'
 #path = 'C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/view/'
 #path = '../input/ieee-fraud-detection/'
 

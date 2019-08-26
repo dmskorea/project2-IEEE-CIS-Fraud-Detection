@@ -9,14 +9,17 @@ warnings.simplefilter("ignore")
 plt.style.use('ggplot')
 color_pal = [x['color'] for x in plt.rcParams['axes.prop_cycle']]
 
+path = 'C:/public/ieee-fraud-detection/'
+
+
 # Transaction CSVs
-train_transaction = pd.read_csv('C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/train_transaction.csv')
-test_transaction = pd.read_csv('C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/test_transaction.csv')
+train_transaction = pd.read_csv(path + 'train_transaction.csv')
+test_transaction = pd.read_csv(path + 'test_transaction.csv')
 # Identity CSVs - These will be merged onto the transactions to create additional features
-train_identity = pd.read_csv('C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/train_identity.csv')
-test_identity = pd.read_csv('C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/test_identity.csv')
+train_identity = pd.read_csv(path + 'train_identity.csv')
+test_identity = pd.read_csv(path + 'test_identity.csv')
 # Sample Submissions
-ss = pd.read_csv('C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/sample_submission.csv')
+ss = pd.read_csv(path + 'sample_submission.csv')
 
 print('train_transaction shape is {}'.format(train_transaction.shape))
 print('test_transaction shape is {}'.format(test_transaction.shape))
