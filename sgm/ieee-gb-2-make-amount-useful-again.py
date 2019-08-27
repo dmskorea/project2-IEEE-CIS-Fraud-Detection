@@ -13,6 +13,8 @@ import math
 warnings.filterwarnings('ignore')
 
 
+path = 'C:/public/ieee-fraud-detection/'
+
 def seed_everything(seed=0):
     random.seed(seed)
     os.environ['PYTHONHASHSEED'] = str(seed)
@@ -24,13 +26,13 @@ import lightgbm as lgb
 
 def make_predictions(tr_df, tt_df, features_columns, target, lgb_params, NFOLDS=2):
     folds = KFold(n_splits=NFOLDS, shuffle=True, random_state=SEED)
-
+    
     X, y = tr_df[features_columns], tr_df[target]    
     P, P_y = tt_df[features_columns], tt_df[target]  
 
     tt_df = tt_df[['TransactionID', target]]    
     predictions = np.zeros(len(tt_df))
-    
+
     for fold_, (trn_idx, val_idx) in enumerate(folds.split(X, y)):
         print('Fold:', fold_)
         tr_x, tr_y = X.iloc[trn_idx, :], y[trn_idx]
@@ -73,7 +75,7 @@ TARGET = 'isFraud'
 START_DATE = datetime.datetime.strptime('2017-11-30', '%Y-%m-%d')
 
 print('Load Data')
-train_df = pd.read_pickle('../input/ieee-data-minification/train_transaction.pkl')
+train_df = pd.read_pickle(path + 'train_transaction.pkl')
 
 if LOCAL_TEST:
     
@@ -85,7 +87,7 @@ if LOCAL_TEST:
     test_df = train_df[train_df['DT_M'] == train_df['DT_M'].max()].reset_index(drop=True)
     train_df = train_df[train_df['DT_M'] < (train_df['DT_M'].max() - 1)].reset_index(drop=True)
     
-    train_identity = pd.read_pickle('../input/ieee-data-minification/train_identity.pkl')
+    train_identity = pd.read_pickle(path + 'train_identity.pkl')
     test_identity = train_identity[train_identity['TransactionID'].isin(
                                     test_df['TransactionID'])].reset_index(drop=True)
     train_identity = train_identity[train_identity['TransactionID'].isin(
@@ -93,9 +95,9 @@ if LOCAL_TEST:
     del train_df['DT_M'], test_df['DT_M']
     
 else:
-    test_df = pd.read_pickle('../input/ieee-data-minification/test_transaction.pkl')
-    train_identity = pd.read_pickle('../input/ieee-data-minification/train_identity.pkl')
-    test_identity = pd.read_pickle('../input/ieee-data-minification/test_identity.pkl')
+    test_df = pd.read_pickle(path + 'test_transaction.pkl')
+    train_identity = pd.read_pickle(path + 'train_identity.pkl')
+    test_identity = pd.read_pickle(path + 'test_identity.pkl')
     
 base_columns = list(train_df) + list(train_identity)
 print('Shape control:', train_df.shape, test_df.shape)
@@ -378,6 +380,7 @@ features_discard = []
 # Final features list
 features_columns = [col for col in list(train_df) if col not in rm_cols + features_discard]
 
+
 ########################### Model params
 lgb_params = {
                     'objective':'binary',
@@ -398,7 +401,6 @@ lgb_params = {
                     'early_stopping_rounds':100,
                 } 
 
-
 ########################### Model Train
 if LOCAL_TEST:
     lgb_params['learning_rate'] = 0.01
@@ -411,9 +413,8 @@ else:
     lgb_params['n_estimators'] = 1800
     lgb_params['early_stopping_rounds'] = 100    
     test_predictions = make_predictions(train_df, test_df, features_columns, TARGET, lgb_params, NFOLDS=10)
-    
 
 ########################### Export
 if not LOCAL_TEST:
     test_predictions['isFraud'] = test_predictions['prediction']
-    test_predictions[['TransactionID','isFraud']].to_csv('submission.csv', index=False)    
+    test_predictions[['TransactionID', 'isFraud']].to_csv('submission.csv', index=False)    

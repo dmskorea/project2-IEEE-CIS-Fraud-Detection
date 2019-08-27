@@ -4,6 +4,7 @@ DMS.Korea LeaderBoard
 
 | date| name | 알고리즘 | 변수개수 | CV | LB | 비고 |
 |-----|------|---------|---------|----|-----|-----|
+| 2019-08-27 | 김윤영 | LGB | 410 | 0.9393 | 0.9504 | + (null sum + browser check) & drop some V |
 | 2019-08-24 | 김윤영 | LGB | 411 | 0.9394 | 0.9500 | simple fe + addtional TargetMean |
 | 2019-08-24 | 현종열 | LGB | 506 | 0.9508 | 0.9489 | simple fe + lgb4 + (uid3+id_target_mean) v3 |
 | 2019-08-20 | 송현정 | LGB | 556 | 0.9372 | 0.9453 | simple fe + 5folds + lgb |

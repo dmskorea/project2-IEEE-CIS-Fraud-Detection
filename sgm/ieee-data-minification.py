@@ -7,7 +7,7 @@ import pandas as pd
 
 warnings.filterwarnings('ignore')
 
-path = 'C:/Users/seuk/git/project2-IEEE-CIS-Fraud-Detection/input/'
+path = 'C:/public/ieee-fraud-detection/'
 
 
 def seed_everything(seed=0):
