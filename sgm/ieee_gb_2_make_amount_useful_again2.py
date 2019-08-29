@@ -278,6 +278,9 @@ def init(path = 'C:/public/ieee-fraud-detection/'):
             train_df[new_column] /= train_df[period + '_total']
             test_df[new_column] /= test_df[period + '_total']
     
+    
+    
+    
     ########################### Encode Str columns
     # For all such columns (probably not)
     # we already did frequency encoding (numeric feature)

@@ -82,11 +82,13 @@ print(np.sum(test_transaction['TransactionID'].isin(test_identity['TransactionID
 # In[6]:
 
 
-train_transaction['TransactionDT'].plot(kind='hist',
+cxxx_df['CF'].plot(kind='hist',
                                         figsize=(15, 5),
                                         label='train',
                                         bins=50,
                                         title='Train vs Test TransactionDT distribution')
+
+
 test_transaction['TransactionDT'].plot(kind='hist',
                                        label='test',
                                        bins=50)
@@ -363,6 +365,13 @@ train_transaction[m_cols].head()
 
 
 # In[26]:
+
+
+(train_transaction[m_cols] == 'T').sum().plot(kind='bar',
+                                              title='Count of T by M column',
+                                              figsize=(15, 2),
+                                              color=color_pal[3])
+
 
 
 (train_transaction[m_cols] == 'T').sum().plot(kind='bar',
