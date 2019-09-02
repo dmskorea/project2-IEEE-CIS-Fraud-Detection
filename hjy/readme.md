@@ -1,4 +1,7 @@
 TO-DO-LIST
+- user_id train에는 있는데 test에는 없는거 
+- user_id 중에 train에서 fraud 라고 판별이 난게 test에도 있는거 
+
 - NN, https://www.kaggle.com/ryches/keras-nn-starter-w-time-series-split
 - another FE : https://www.kaggle.com/nroman/eda-for-cis-fraud-detection
 - train_df=nan2mean(train_df)
