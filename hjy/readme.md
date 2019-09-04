@@ -1,4 +1,5 @@
 TO-DO-LIST
+- https://www.kaggle.com/shahules/an-overview-of-encoding-techniques
 - user_id train에는 있는데 test에는 없는거 
 - user_id 중에 train에서 fraud 라고 판별이 난게 test에도 있는거 
 
