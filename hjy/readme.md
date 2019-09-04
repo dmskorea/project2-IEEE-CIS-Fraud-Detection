@@ -1,4 +1,5 @@
 TO-DO-LIST
+- filter some V features https://www.kaggle.com/alijs1/ieee-transaction-columns-reference
 - https://www.kaggle.com/jesucristo/fraud-complete-eda
 - https://www.kaggle.com/shahules/an-overview-of-encoding-techniques
 - user_id train에는 있는데 test에는 없는거 
