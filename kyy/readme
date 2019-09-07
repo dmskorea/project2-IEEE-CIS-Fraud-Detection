@@ -27,3 +27,7 @@
   lbo (last-block-out) / stratified k-fold
   
   
+3. TODO
+- feature selection 
+- catboost, XGBboost
+- stacking 
