@@ -1,1 +1,29 @@
 
+2019-09-07
+
+
+1. 스코어 
+
+2019-09-06  GMean	-	-	0.9537	pulic24 +private 26 
+2019-09-04	LGB	419	0.9410	0.9509	DT_group_kfold
+2019-09-02	LGB	418	0.9399	0.9508	+ type_per_period
+2019-08-27	LGB	410	0.9393	0.9504	+ (null sum + browser check) & drop some V
+(베이스라인)  CV : 0.9394 / LB : 0.9500 / feat_num : 411
+
+
+*pulbic : https://www.kaggle.com/roydatascience/lgmodels
+*private : 0.9405 이상 26개 
+
+2. private details
+- drop case (FE)
+  D, C, V PCA 
+  duplicate counting
+  usr-aggregation
+
+- drop case (training)
+  learning rate variation ( 0.00685 +/- 0.001)
+  num_leaves (491  +/- 50 ) 너무 많으면 overfitting
+  7 / 10-fold cross validation
+  lbo (last-block-out) / stratified k-fold
+  
+  
