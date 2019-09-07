@@ -28,6 +28,8 @@
   
   
 3. TODO
+- preprocessing (binning, scaling)
+- dimension reduction ( PCA, NMF, LDA)
 - feature selection 
 - catboost, XGBboost
 - stacking 
