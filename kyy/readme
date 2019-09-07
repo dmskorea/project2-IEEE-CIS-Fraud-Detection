@@ -4,7 +4,7 @@
 
 1. 스코어 
 
-2019-09-06  GMean	-	-	0.9537	pulic24 +private 26 
+2019-09-06    GMean	-	-	0.9537	pulic24 +private 26 
 2019-09-04	LGB	419	0.9410	0.9509	DT_group_kfold
 2019-09-02	LGB	418	0.9399	0.9508	+ type_per_period
 2019-08-27	LGB	410	0.9393	0.9504	+ (null sum + browser check) & drop some V
