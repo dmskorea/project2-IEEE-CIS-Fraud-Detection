@@ -1,4 +1,5 @@
 TO-DO-LIST
+- https://www.kaggle.com/duykhanh99/update-lgb-starter-with-r-0-9480-lb
 - https://www.kaggle.com/rajeshcv/understanding-v-columns
 - filter some V features https://www.kaggle.com/alijs1/ieee-transaction-columns-reference
 - https://www.kaggle.com/jesucristo/fraud-complete-eda
