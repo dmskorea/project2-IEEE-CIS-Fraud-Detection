@@ -9,6 +9,7 @@ DMS.Korea LeaderBoard
 | 2019-09-04 | 김윤영 | LGB | 419 | 0.9410 | 0.9509 | DT_group_kfold |
 | 2019-09-02 | 김윤영 | LGB | 418 | 0.9399 | 0.9508 | + type_per_period |
 | 2019-08-27 | 김윤영 | LGB | 410 | 0.9393 | 0.9504 | + (null sum + browser check) & drop some V |
+| 2019-09-05 | 현종열 | LGB | - | 0.9421 | 0.9506 | remove sum |
 | 2019-09-05 | 현종열 | LGB | - | 0.9408 | 0.9505 | tune max_depth |
 | 2019-08-24 | 현종열 | LGB | 506 | 0.9508 | 0.9489 | simple fe + lgb4 + (uid3+id_target_mean) v3 |
 | 2019-09-06 | 석기명 | LGB | 366 | 0.9452 |  0.9472 | min features |
