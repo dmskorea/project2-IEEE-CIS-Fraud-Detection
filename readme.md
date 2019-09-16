@@ -3,12 +3,12 @@ DMS.Korea Submit CountBoard
 <hr />
 
 | 9-24 | 9-25 | 9-26 | 9-27 | 9-28 | 9-29 | 9-30 | 10-1 |
-|------|------|------|------|------|------|------|------|
-|   O  |  O   |   O  |  O   |  O   |  O   |  O   |  O   |
-|   O  |  O   |   O  |  O   |  O   |  O   |  O   |  O   |
-|   O  |  O   |   O  |  O   |  O   |  O   |  O   |  O   |
-|   O  |  O   |   O  |  O   |  O   |  O   |  O   |  O   |
-|   O  |  O   |   O  |  O   |  O   |  O   |  O   |  O   |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
+|   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
+|   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
+|   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
+|   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
 
 <hr />
 DMS.Korea LeaderBoard
