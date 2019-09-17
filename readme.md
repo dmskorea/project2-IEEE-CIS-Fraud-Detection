@@ -18,7 +18,7 @@ DMS.Korea LeaderBoard
 |-----|------|---------|---------|----|-----|-----|
 | 2019-09-10 | 김윤영 | Stack | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | Stack | - | - | 0.9536 | + private 5 |
-| 2019-09-17 | 현종열 | LGB | - | 0.9424 | 0.9518 | add more agg features, Out of folds AUC = 0.9421 |
+| 2019-09-17 | 현종열 | LGB | - | 0.9424 | 0.9518 | add trans agg features, Out folds AUC 0.9421 |
 | 2019-09-15 | 현종열 | LGB | - | 0.9426 | 0.9516 | drop id_freq |
 | 2019-09-14 | 현종열 | LGB | - | 0.9425 | 0.9512 | na_v & uid |
 | 2019-09-04 | 김윤영 | LGB | 419 | 0.9410 | 0.9509 | DT_group_kfold |
