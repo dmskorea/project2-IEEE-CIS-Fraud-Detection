@@ -20,6 +20,7 @@ DMS.Korea LeaderBoard
 | 2019-09-16 | 현종열 | Stack | - | - | 0.9536 | + private 5 |
 | 2019-09-18 | 김윤영 | LGB | 463 | 0.9417 | 0.9521 | high correlation feat removal (T=0.9998) |
 | 2019-09-17 | 김윤영 | LGB | 493 | 0.9418 | 0.9520 | group na & Amt cent / decimal encoding |
+| 2019-09-20 | 현종열 | LGB | - | 0.9426 | 0.9519 | card outlier imputation |
 | 2019-09-17 | 현종열 | LGB | - | 0.9424 | 0.9518 | add trans agg features, Out folds AUC 0.9421 |
 | 2019-09-18 | 석기명 | - | - | - | 0.9518 | submit-file-4 std |
 | 2019-09-15 | 현종열 | LGB | - | 0.9426 | 0.9516 | drop id_freq |
