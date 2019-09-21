@@ -38,6 +38,17 @@ DMS.Korea LeaderBoard
 | 2019-09-07 | 전승유 | LGB | 471 | - | 0.9431 | tune |
 
 <hr />
+2019-09-021 공지사항
+<hr />
+
+알고리즘별 담당자
+- NN, liteMOTEE : 김윤영
+- NN, Post Progress, Extra Trees : 현종열
+- XGBoost : 송현정
+- CatBoost : 석기명
+- LGB : 전승유
+
+<hr />
 2019-09-06 공지사항
 <hr />
 
