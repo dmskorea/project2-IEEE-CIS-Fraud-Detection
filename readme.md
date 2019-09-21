@@ -16,6 +16,7 @@ DMS.Korea LeaderBoard
 
 | date| name | 알고리즘 | 변수개수 | CV | LB | 비고 |
 |-----|------|---------|---------|----|-----|-----|
+| 2019-09-21 | 김윤영 | Stack | - | - | 0.9550 | + 20 private including liteMOTEE |
 | 2019-09-10 | 김윤영 | Stack | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | Stack | - | - | 0.9536 | + private 5 |
 | 2019-09-18 | 김윤영 | LGB | 463 | 0.9417 | 0.9521 | high correlation feat removal (T=0.9998) |
