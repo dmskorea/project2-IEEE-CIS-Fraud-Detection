@@ -17,8 +17,8 @@ DMS.Korea LeaderBoard
 | date| name | 알고리즘 | 변수개수 | CV | LB | 비고 |
 |-----|------|---------|---------|----|-----|-----|
 | 2019-09-10 | 김윤영 | Stack | - | - | 0.9539 | pulic24 + private 26 (tune) |
-| 2019-09-16 | 현종열 | Stack | - | - | 0.9536 | card_impu_values_normal |
-| 2019-09-21 | 현종열 | LGB | 350 | 0.9430 | 0.9523 | card outlier imputation |
+| 2019-09-16 | 현종열 | Stack | - | - | 0.9536 | + private 5 |
+| 2019-09-21 | 현종열 | LGB | 350 | 0.9430 | 0.9523 | card_impu_values_normal |
 | 2019-09-18 | 김윤영 | LGB | 463 | 0.9417 | 0.9521 | high correlation feat removal (T=0.9998) |
 | 2019-09-17 | 김윤영 | LGB | 493 | 0.9418 | 0.9520 | group na & Amt cent / decimal encoding |
 | 2019-09-20 | 현종열 | LGB | - | 0.9426 | 0.9519 | card outlier imputation |
