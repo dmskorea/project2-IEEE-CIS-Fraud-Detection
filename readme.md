@@ -11,7 +11,7 @@ DMS.Korea Submit CountBoard
 |   o  |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
 
 <hr />
-DMS.Korea 알고리즘별 CV 스코어 (LGB제외)
+DMS.Korea 알고리즘별 CV(k=5) 스코어 (LGB제외)
 <hr />
 
 | 순위 | XGB | CatBoost | liteMOTEE | NN | Extra Trees |
