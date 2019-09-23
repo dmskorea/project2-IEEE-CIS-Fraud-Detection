@@ -1,4 +1,5 @@
 - https://www.kaggle.com/mjbahmani/reducing-memory-size-for-ieee
+- model collections(NN) : https://www.kaggle.com/c/ieee-fraud-detection/discussion/102739#latest-612958
 
 <hr />
 DMS.Korea Submit CountBoard
