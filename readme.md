@@ -1,3 +1,5 @@
+- https://www.kaggle.com/c/LANL-Earthquake-Prediction/discussion/93462
+
 <hr />
 DMS.Korea Submit CountBoard
 <hr />
