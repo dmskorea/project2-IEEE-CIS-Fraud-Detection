@@ -34,6 +34,11 @@ TO-DO-LIST
 - FE2 : https://www.kaggle.com/jolly2136/fe-xgb/output
 - FE3 : histogram feature, https://www.kaggle.com/ogrellier/using-histogram-as-feature-1-43
 
+- https://www.kaggle.com/mjbahmani/reducing-memory-size-for-ieee
+- model collections(NN) : https://www.kaggle.com/c/ieee-fraud-detection/discussion/102739#latest-612958
+- LightGbm USE : fobj=focal_binary_object
+- Xgboost USE : obj =focal_binary_object
+
 ***
 
 [my VI]
