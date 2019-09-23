@@ -1,5 +1,3 @@
-- https://www.kaggle.com/c/LANL-Earthquake-Prediction/discussion/93462
-
 <hr />
 DMS.Korea Submit CountBoard
 <hr />
@@ -16,7 +14,7 @@ DMS.Korea Submit CountBoard
 DMS.Korea 알고리즘별 CV(k=5) 스코어 
 <hr />
 
-| 순위 | XGB | CatBoost | liteMOTEE | NN | Extra Trees |
+| 순위 | XGB | CatBoost | liteMOTEE | NN | DAE+NN |
 |:----:|:----:|:----:|:----:|:----:|:----:|
 | 1 | 0.9367(LB:0.9486) |   0.9346(LB:0.9345) |   0.9406(LB:0.9519)   |      |      |
 | 2 | |      |      |      |      |
