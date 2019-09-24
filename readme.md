@@ -7,7 +7,7 @@ DMS.Korea Submit CountBoard (최대 submnit횟수 350번)
 |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
 |   o  |   o  |   o  |   o  |   o  |   o  |   o  |
 |   o  |   o  |   o  |   o  |   o  |   o  |   o  | 
-|   o  |   o  |   o  |   o  |   o  |   o  |   o  | 
+|      |   o  |   o  |   o  |   o  |   o  |   o  | 
 |      |   o  |   o  |   o  |   o  |   o  |   o  | 
 
 | 9-24 | 9-25 | 9-26 | 9-27 | 9-28 | 9-29 | 9-30 |
