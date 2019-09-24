@@ -38,6 +38,7 @@ DMS.Korea LeaderBoard
 | 2019-09-21 | 김윤영 | Blend | - | - | 0.9550 | + 20 private including liteMOTEE |
 | 2019-09-10 | 김윤영 | Blend | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | Blend | - | - | 0.9536 | + private 5 |
+| 2019-09-25 | 현종열 | Blend | - | - | 0.9511 | pulic24 + private 50 |
 | 2019-09-23 | 현종열 | LGB | 350 | 0.9435 | 0.9515 | fobj |
 | 2019-09-21 | 현종열 | LGB | 350 | 0.9430 | 0.9523 | card_impu & D values_normal |
 | 2019-09-21 | 현종열 | LGB | 700 | 0.9429 | 0.9521 | card_nan_impute2 |
