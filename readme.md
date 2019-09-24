@@ -1,5 +1,5 @@
 <hr />
-DMS.Korea Submit CountBoard
+DMS.Korea Submit CountBoard (최대 submnit횟수 350번)
 <hr />
 
 | 9-24 | 9-25 | 9-26 | 9-27 | 9-28 | 9-29 | 9-30 |
