@@ -39,7 +39,6 @@ DMS.Korea LeaderBoard
 | 2019-09-10 | 김윤영 | Blend | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | Blend | - | - | 0.9536 | + private 5 |
 | 2019-09-25 | 현종열 | Blend | - | - | 0.9511 | pulic24 + private 50 |
-| 2019-09-23 | 현종열 | LGB | 350 | 0.9435 | 0.9515 | fobj |
 | 2019-09-21 | 현종열 | LGB | 350 | 0.9430 | 0.9523 | card_impu & D values_normal |
 | 2019-09-21 | 현종열 | LGB | 700 | 0.9429 | 0.9521 | card_nan_impute2 |
 | 2019-09-18 | 김윤영 | LGB | 463 | 0.9417 | 0.9521 | high correlation feat removal (T=0.9998) |
@@ -48,6 +47,7 @@ DMS.Korea LeaderBoard
 | 2019-09-17 | 현종열 | LGB | - | 0.9424 | 0.9518 | add trans agg features, Out folds AUC 0.9421 |
 | 2019-09-18 | 석기명 | - | - | - | 0.9518 | submit-file-4 std |
 | 2019-09-15 | 현종열 | LGB | - | 0.9426 | 0.9516 | drop id_freq |
+| 2019-09-23 | 현종열 | LGB | 350 | 0.9435 | 0.9515 | fobj |
 | 2019-09-14 | 현종열 | LGB | - | 0.9425 | 0.9512 | na_v & uid |
 | 2019-09-04 | 김윤영 | LGB | 419 | 0.9410 | 0.9509 | DT_group_kfold |
 | 2019-09-02 | 김윤영 | LGB | 418 | 0.9399 | 0.9508 | + type_per_period |
