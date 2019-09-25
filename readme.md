@@ -33,12 +33,12 @@ DMS.Korea 알고리즘별 CV(k=5) 스코어
 DMS.Korea LeaderBoard (Blending)
 <hr />
 
-| date| name | 모델개수 | CV | LB | 비고 |
+| date| name | private모델 알고리즘 | CV | LB | 비고 |
 |-----|------|---------|----|-----|-----|
-| 2019-09-21 | 김윤영 | 44 | - | 0.9550 | + 20 private including liteMOTEE |
-| 2019-09-10 | 김윤영 | 50 | - | 0.9539 | pulic24 + private 26 (tune) |
-| 2019-09-16 | 현종열 | 29 | - | 0.9536 | + private 5 |
-| 2019-09-25 | 현종열 | 74 | - | 0.9511 | pulic24 + private 50 |
+| 2019-09-21 | 김윤영 | - | - | 0.9550 | + 20 private including liteMOTEE |
+| 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
+| 2019-09-16 | 현종열 | 5LGB | - | 0.9536 | + private 5 |
+| 2019-09-25 | 현종열 | 50LGB | - | 0.9511 | pulic24 + private 50 |
 
 <hr />
 DMS.Korea LeaderBoard (Solo Model)
