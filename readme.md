@@ -33,6 +33,7 @@ DMS.Korea LeaderBoard (Blending)
 | 2019-09-21 | 김윤영 | - | - | 0.9550 | + 20 private including liteMOTEE |
 | 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | 5LGB | - | 0.9536 | + private 5 |
+| 2019-09-27 | 현종열 | - | 0.9400 | 0.9532 | find_the_optimal_weights v9 |
 | 2019-09-25 | 현종열 | 50LGB | - | 0.9511 | pulic24 + private 50 |
 | 2019-09-25 | 현종열 | 10LGB | - | 0.9524 | |
 
