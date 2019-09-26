@@ -1,5 +1,5 @@
 <hr />
-DMS.Korea out of folds and submissions  
+DMS.Korea 아웃오브폴드 앤 
 <hr />
 
 - https://www.kaggle.com/jacobgreen4477/cv9420-2litemort-oof-and-submission-files (종열' liteMOTEE * 2개)
