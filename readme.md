@@ -1,12 +1,4 @@
 <hr />
-DMS.Korea 아웃오브폴드 앤 섭미션 
-<hr />
-
-- https://www.kaggle.com/jacobgreen4477/cv9420-2litemort-oof-and-submission-files (종열' liteMOTEE * 2개)
-- https://www.kaggle.com/kdafke123141/9488-out-of-folds-leader/output (종열's xgboost * 1개) 
-- https://www.kaggle.com/jacobgreen4477/stack-top10-lgb/output (종열's lgb * 10개) 
-
-<hr />
 DMS.Korea Submit CountBoard 
 <hr />
 
