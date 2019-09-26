@@ -29,6 +29,7 @@ DMS.Korea LeaderBoard (Blending)
 
 | date| name | private모델 알고리즘 | CV | LB | 비고 |
 |-----|------|---------|----|-----|-----|
+| 2019-09-27 | 현종열 | - | - | 0.9552 | simple_weighted_avg |
 | 2019-09-21 | 김윤영 | - | - | 0.9550 | + 20 private including liteMOTEE |
 | 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | 5LGB | - | 0.9536 | + private 5 |
