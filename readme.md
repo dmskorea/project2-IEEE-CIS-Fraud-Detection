@@ -1,4 +1,9 @@
 <hr />
+DMS.Korea out of folds and submissions  
+<hr />
+- https://www.kaggle.com/jacobgreen4477/cv9420-2litemort-oof-and-submission-files (종열' liteMOTEE * 2개)
+
+<hr />
 DMS.Korea Submit CountBoard 
 <hr />
 
