@@ -4,7 +4,7 @@ DMS.Korea Submit CountBoard
 
 | 9-24 | 9-25 | 9-26 | 9-27 | 9-28 | 9-29 | 9-30 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|   o  |   o  |   o  |   o  |   o  |   o  |   o  |
+|   o  |   o  |      |   o  |   o  |   o  |   o  |
 |   o  |      |      |   o  |   o  |   o  |   o  |
 |      |      |      |   o  |   o  |   o  |   o  | 
 |      |      |      |   o  |   o  |   o  |   o  | 
@@ -34,6 +34,7 @@ DMS.Korea LeaderBoard (Blending)
 | 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
 | 2019-09-16 | 현종열 | 5LGB | - | 0.9536 | + private 5 |
 | 2019-09-27 | 현종열 | - | 0.9400 | 0.9532 | find_the_optimal_weights v9 |
+| 2019-09-27 | 현종열 | - | 0.9398 | 0.9529 | find_the_optimal_weights2 v1 |
 | 2019-09-25 | 현종열 | 50LGB | - | 0.9511 | pulic24 + private 50 |
 | 2019-09-25 | 현종열 | 10LGB | - | 0.9524 | |
 
