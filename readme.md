@@ -27,20 +27,20 @@ DMS.Korea 알고리즘별 CV(k=5) 스코어
 DMS.Korea LeaderBoard (Blending)
 <hr />
 
-| date| name | private모델 알고리즘 | CV | LB | 비고 |
-|-----|------|---------|----|-----|-----|
-| 2019-09-27 | 현종열 | - | - | 0.9552 | simple_weighted_avg |
-| 2019-09-21 | 김윤영 | - | - | 0.9550 | + 20 private including liteMOTEE |
-| 2019-09-27 | 현종열 | - | 0.9523 |  | 9543_find_the_optimal_weights_w_bounds(0,1) v2 |
-| 2019-09-27 | 현종열 | - | 0.9521 |  | find_the_optimal_weights_w_bounds(0,1) v34 |
-| 2019-09-27 | 현종열 | - | 0.9517 |  | find_the_optimal_weights_w_bounds(0,1) v37 |
-| 2019-09-27 | 현종열 | - | 0.9511 | 0.9543 | find_the_optimal_weights_w_bounds(0,1) v33 |
-| 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
-| 2019-09-16 | 현종열 | 5LGB | - | 0.9536 | + private 5 |
-| 2019-09-27 | 현종열 | - | 0.9400 | 0.9532 | find_the_optimal_weights v9 |
-| 2019-09-27 | 현종열 | - | 0.9398 | 0.9529 | find_the_optimal_weights2 v1 |
-| 2019-09-25 | 현종열 | 50LGB | - | 0.9511 | pulic24 + private 50 |
-| 2019-09-25 | 현종열 | 10LGB | - | 0.9524 | |
+| date| name | CV | LB | 비고 |
+|-----|------|----|-----|-----|
+| 2019-09-27 | 현종열 | - | 0.9552 | simple_weighted_avg |
+| 2019-09-21 | 김윤영 | - | 0.9550 | + 20 private including liteMOTEE |
+| 2019-09-27 | 현종열 | 0.9523 |  | 9543_find_the_optimal_weights_w_bounds(0,1) v2 |
+| 2019-09-27 | 현종열 | 0.9521 |  | find_the_optimal_weights_w_bounds(0,1) v34 |
+| 2019-09-27 | 현종열 | 0.9517 |  | find_the_optimal_weights_w_bounds(0,1) v37 |
+| 2019-09-27 | 현종열 | 0.9511 | 0.9543 | find_the_optimal_weights_w_bounds(0,1) v33 |
+| 2019-09-10 | 김윤영 | - | 0.9539 | pulic24 + private 26 (tune) |
+| 2019-09-16 | 현종열 | - | 0.9536 | + private 5 |
+| 2019-09-27 | 현종열 | 0.9400 | 0.9532 | find_the_optimal_weights v9 |
+| 2019-09-27 | 현종열 | 0.9398 | 0.9529 | find_the_optimal_weights2 v1 |
+| 2019-09-25 | 현종열 | - | 0.9511 | pulic24 + private 50 |
+| 2019-09-25 | 현종열 | - | 0.9524 | |
 
 <hr />
 DMS.Korea LeaderBoard (Solo Model)
