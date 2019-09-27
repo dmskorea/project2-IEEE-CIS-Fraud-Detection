@@ -31,6 +31,7 @@ DMS.Korea LeaderBoard (Blending)
 |-----|------|---------|----|-----|-----|
 | 2019-09-27 | 현종열 | - | - | 0.9552 | simple_weighted_avg |
 | 2019-09-21 | 김윤영 | - | - | 0.9550 | + 20 private including liteMOTEE |
+| 2019-09-27 | 현종열 | - | 0.9521 |  | find_the_optimal_weights_w_bounds(0,1) v34 |
 | 2019-09-27 | 현종열 | - | 0.9517 |  | find_the_optimal_weights_w_bounds(0,1) v37 |
 | 2019-09-27 | 현종열 | - | 0.9511 | 0.9543 | find_the_optimal_weights_w_bounds(0,1) v33 |
 | 2019-09-10 | 김윤영 | - | - | 0.9539 | pulic24 + private 26 (tune) |
