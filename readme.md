@@ -26,7 +26,7 @@ DMS.Korea 알고리즘별 CV(k=5) 스코어
 <hr />
 DMS.Korea LeaderBoard (Blending)
 <hr />
-0.953
+
 | date| name | CV | LB | 비고 |
 |-----|------|----|-----|-----|
 | 2019-09-27 | 현종열 | - | 0.9552 | simple_weighted_avg |
