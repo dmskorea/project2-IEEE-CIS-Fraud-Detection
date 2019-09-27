@@ -1,4 +1,5 @@
 TO-DO-LIST
+- https://www.kaggle.com/super13579/pytorch-nn-cyclelr-k-fold-0-897-lightgbm-0-899/output
 - https://www.kaggle.com/triplelift/single-nn-score-0-94179
 - https://www.kaggle.com/questions-and-answers/41116
 - https://www.kaggle.com/c/ieee-fraud-detection/discussion/108616#latest-628955
