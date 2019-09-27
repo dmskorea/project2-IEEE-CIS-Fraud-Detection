@@ -7,7 +7,7 @@ DMS.Korea Submit CountBoard
 |   o  |   o  |      |   o  |   o  |   o  |   o  |
 |   o  |      |      |   o  |   o  |   o  |   o  |
 |      |      |      |   o  |   o  |   o  |   o  | 
-|      |      |      |   o  |   o  |   o  |   o  | 
+|      |      |      |      |   o  |   o  |   o  | 
 |      |      |      |      |   o  |   o  |   o  | 
 
 <hr />
