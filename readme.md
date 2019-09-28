@@ -7,7 +7,7 @@ DMS.Korea Submit CountBoard
 |   o  |   o  |      |   o  |   o  |   o  |   o  |
 |   o  |      |      |   o  |   o  |   o  |   o  |
 |      |      |      |      |   o  |   o  |   o  | 
-|      |      |      |      |   o  |   o  |   o  | 
+|      |      |      |      |     |   o  |   o  | 
 |      |      |      |      |     |   o  |   o  | 
 
 <hr />
@@ -31,6 +31,7 @@ DMS.Korea LeaderBoard (Blending)
 |-----|------|----|-----|-----|
 | 2019-09-27 | 현종열 | - | 0.9552 | simple_weighted_avg |
 | 2019-09-21 | 김윤영 | - | 0.9550 | + 20 private including liteMOTEE |
+| 2019-09-28 | 현종열 | 0.9552 | 0.9538 | find_the_optimal_weights_m18 v9 |
 | 2019-09-28 | 현종열 | 0.9543 |  | find_the_optimal_weights_m18 v8 |
 | 2019-09-28 | 현종열 | 0.9526 |  | find_the_optimal_weights_w_bounds(0,1) v41 |
 | 2019-09-27 | 현종열 | 0.9524 | 0.9530 | find_the_optimal_weights_w_bounds(0,1) v40 |
