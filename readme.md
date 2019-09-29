@@ -27,11 +27,14 @@ DMS.Korea 알고리즘별 CV(k=5) 스코어
 DMS.Korea LeaderBoard (Blending)
 <hr />
 
+
+
 | date| name | CV | LB | 비고 |
 |-----|------|----|-----|-----|
 | 2019-09-29 | 현종열 | - | 0.9555 | simple_weighted_avg |
 | 2019-09-27 | 현종열 | - | 0.9552 | simple_weighted_avg |
 | 2019-09-21 | 김윤영 | - | 0.9550 | + 20 private including liteMOTEE |
+| 2019-09-29 | 현종열 | 0.9551 | 0.9548 | stack_of_stack v1 |
 | 2019-09-28 | 현종열 | 0.9552 | 0.9538 | find_the_optimal_weights_m18 v9 |
 | 2019-09-28 | 현종열 | 0.9543 |  | find_the_optimal_weights_m18 v8 |
 | 2019-09-28 | 현종열 | 0.9526 |  | find_the_optimal_weights_w_bounds(0,1) v41 |
